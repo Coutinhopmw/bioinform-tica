@@ -18,7 +18,7 @@ Se o projeto não aparecer diretamente, siga estes passos alternativos:
 1. Clique em **File -> Open Project**.
 2. Selecione o diretório onde está o projeto `Bioinfo`.
 
-### Execoteando o Projeto
+### Executando o Projeto
 
 1. Clique em **play** e espere.
 
