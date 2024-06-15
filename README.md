@@ -18,8 +18,8 @@ Se o projeto não aparecer diretamente, siga estes passos alternativos:
 1. Clique em **File -> Open Project**.
 2. Selecione o diretório onde está o projeto `Bioinfo`.
 
-### Executando o Projeto
+### Execoteando o Projeto
 
 1. Clique em **play** e espere.
 
-![Imagem exemplo](Bioinfo/github/tut.png)
+![Imagem exemplo](github/tut.png)
