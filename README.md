@@ -22,4 +22,4 @@ Se o projeto não aparecer diretamente, siga estes passos alternativos:
 
 1. Clique em **play** e espere.
 
-![Imagem exemplo](Bioinfo/github/tut.png)
+![Imagem exemplo](tut.png)
