@@ -11,7 +11,7 @@ Este projeto utiliza o Apache Tomcat como container para rodar os servlets. Se a
 Para importar o projeto no NetBeans:
 
 1. Clique em **File -> Import Project -> From Zip**.
-2. Selecione o arquivo `Bioinfo.zip` disponibilizado.
+2. Selecione o arquivo `Bioinfo.zip` disponibilizado em `Bioinfo/github/`.
 
 Se o projeto não aparecer diretamente, siga estes passos alternativos:
 
