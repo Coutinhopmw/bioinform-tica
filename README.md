@@ -2,13 +2,11 @@
 **Curso:** Bacharelado em Ciência da Computação \
 **Professor:** Wosley da Costa Arruda\
 **Time**:
-| Nome                                      | Github                                           |
-|-------------------------------------------|--------------------------------------------------|
-| Cássio Coutinho                           | [Coutinhopmw](https://github.com/Coutinhopmw)    |
-| Jessé Elizeu                              | [jessilver](https://github.com/jessilver)        |
-| Jônatas Souza Madeira                     | [MelloJ](https://github.com/MellloJ)             |
-| Thiago Soares                             | [Suarez]()   |
-| João Pedro Ribeiro Dias Moraes            | [CaesarCrew](https://github.com/CaesarCrew)       |
+* Cássio Coutinho  - [Coutinhopmw](https://github.com/Coutinhopmw)
+* Jessé Elizeu     - [jessilver](https://github.com/jessilver)
+* Jônatas Souza Madeira - [MelloJ](https://github.com/MellloJ)
+* Thiago Soares - [Suarez]()
+* João Pedro Ribeiro Dias Moraes - [CaesarCrew](https://github.com/CaesarCrew)
 
 ## Sobre o Projeto:
 Sistema desenvolvido para a disciplina de Bioinformática e Biologia Computacional, visando comparar a eficiência de diferentes linguagens nas aplicações voltadas para alinhamento de genomas.
