@@ -2,18 +2,24 @@
 **Curso:** Bacharelado em Ciência da Computação \
 **Professor:** Wosley da Costa Arruda\
 **Time**:
-| Nome                                      | Github                                           |
-|-------------------------------------------|--------------------------------------------------|
-| Cássio Coutinho                           | [Coutinhopmw](https://github.com/Coutinhopmw)    |
-| Jessé Elizeu                              | [jessilver](https://github.com/jessilver)        |
-| Jônatas Souza Madeira                     | [MelloJ](https://github.com/MellloJ)             |
-| Thiago Soares                             | [Suarez]()   |
-| João Pedro Ribeiro Dias Moraes            | [CaesarCrew](https://github.com/CaesarCrew)       |
+* Cássio Coutinho  - [Coutinhopmw](https://github.com/Coutinhopmw)
+* Jessé Elizeu     - [jessilver](https://github.com/jessilver)
+* Jônatas Souza Madeira - [MelloJ](https://github.com/MellloJ)
+* Thiago Soares - [Suarez]()
+* João Pedro Ribeiro Dias Moraes - [CaesarCrew](https://github.com/CaesarCrew)
 
 ## Sobre o Projeto:
 Sistema desenvolvido para a disciplina de Bioinformática e Biologia Computacional, visando comparar a eficiência de diferentes linguagens nas aplicações voltadas para alinhamento de genomas.
 
 *Este é um projeto NetBeans. Se ainda não o tem instalado, acesse: [NetBeans 12.1](https://netbeans.apache.org/download/nb121/index.html).
+
+---
+## Versões do sistema:
+### v
+
+### Mudanças técnicas
+* 
+---
 
 ### Configuração do Apache Tomcat
 
@@ -30,13 +36,3 @@ Se o projeto não aparecer diretamente, siga estes passos alternativos:
 
 1. Clique em **File -> Open Project**.
 2. Selecione o diretório onde está o projeto `Bioinfo`.
-
----
-## Versões do sistema:
-### v
-
-### Mudanças técnicas
-* 
----
-
-https://github.com/Coutinhopmw/bioinform-tica/tree/cassio
