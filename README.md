@@ -3,7 +3,7 @@
 **Professor:** Wosley da Costa Arruda\
 **Time**:
 * Cássio Coutinho  - [Coutinhopmw](https://github.com/Coutinhopmw)
-* Jessé Elizeu     - [jessilver](https://github.com/jessilver)
+* Jessé Eliseu     - [jessilver](https://github.com/jessilver)
 * Jônatas Souza Madeira - [MelloJ](https://github.com/MellloJ)
 * Thiago Soares - [Suarez]()
 * João Pedro Ribeiro Dias Moraes - [CaesarCrew](https://github.com/CaesarCrew)
