@@ -88,11 +88,11 @@ int main(int argc, char* argv[]) {
 
     Result result = needleman_wunsch(v, w);
 
-    /*"Time:    "*/cout <<setprecision(2)<< result.execution_time << endl;
-    /*"Score:  "*/cout << result.score << endl;
-    /*"Gaps:   "*/cout << result.gap_count << endl;
+    /*"Tim    "*/cout <<setprecision(2)<< result.execution_time << endl;
+    /*"Score  "*/cout << result.score << endl;
+    /*"Gaps:  "*/cout << result.gap_count << endl;
     /*"EValue:"*/cout << "0.0" /*<<setprecision(5) << result.e_value */<< endl;
-    /*"Linhas: "*/cout << "76" << endl;
+    /*"Linhas:"*/cout << "76" << endl;
     
 
     return 0;

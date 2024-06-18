@@ -65,7 +65,7 @@ public class NW {
         /*Score: */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
         /*Gaps:  */System.out.println(countChar(barrinha.toString(), '-'));
         /*EValue:*/System.out.println("0.0");
-        /*Linhas:*/System.out.println("84");
+        /*Linhas:*/System.out.println("61");
     }
     public static int countChar(String str, char ch) {
         int count = 0;

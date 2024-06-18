@@ -9,12 +9,21 @@ public class ExecuteJavaProgram implements Runnable {
     private String outputFilePath;
     private int count;
     private String seq;
+    private String javaFileName;
 
-    public ExecuteJavaProgram(int count, String seq) {
+    public ExecuteJavaProgram(int count, String seq, String javaFileName) {
         this.count = count;
         this.seq = seq;
-        javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/NW.java";
-        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NWresultado_java" + count + ".txt";
+        this.javaFileName = javaFileName;
+        
+        // Define o caminho do arquivo Java com base no nome do arquivo
+        if ("NW".equals(javaFileName)) {
+            javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/NW.java";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_java" + count + ".txt";
+        } else if ("SW".equals(javaFileName)) {
+            javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/SW.java";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_java" + count + ".txt";
+        }
     }
 
     @Override
@@ -28,7 +37,11 @@ public class ExecuteJavaProgram implements Runnable {
             Process compileProcess = compileProcessBuilder.start();
             int compileExitCode = compileProcess.waitFor();
             if (compileExitCode != 0) {
-                System.out.println("Erro na compilação. Código de retorno: " + compileExitCode);
+                 if ("NW".equals(javaFileName)) {
+                     System.out.println("JAVA NW Erro na compilação. Código de retorno: " + compileExitCode);
+                } else if ("SW".equals(javaFileName)) {
+                   System.out.println("JAVA SW Erro na compilação. Código de retorno: " + compileExitCode);
+                }
                 return;
             }
 
@@ -36,7 +49,7 @@ public class ExecuteJavaProgram implements Runnable {
             File outputFile = new File(outputFilePath);
 
             // Nome completo da classe com o pacote
-            String className = "codes.java.NW";
+            String className = "codes.java." + javaFileName;
 
             // Cria um processo para executar o programa Java
             ProcessBuilder runProcessBuilder = new ProcessBuilder("java", "-cp", outputDir, className, seq);

@@ -1,0 +1,5 @@
+Time: 88028,10
+Score: 73
+Gaps: 303
+EValue: 0.0
+Linhas: 56

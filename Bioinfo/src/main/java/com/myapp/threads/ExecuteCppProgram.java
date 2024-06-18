@@ -10,12 +10,21 @@ public class ExecuteCppProgram implements Runnable {
     private String outputFilePath;
     private int count;
     private String seq;
+    private String cppFileName;
 
-    public ExecuteCppProgram(int count, String seq) {
+    public ExecuteCppProgram(int count, String seq, String cppFileName) {
         this.count = count;
         this.seq = seq;
-        cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/NW.cpp";
-        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NWresultado_cpp" + count + ".txt";
+        this.cppFileName = cppFileName;
+        
+        // Define o caminho do arquivo C++ com base no nome do arquivo
+        if ("NW".equals(cppFileName)) {
+            cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/NW.cpp";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_cpp" + count + ".txt";
+        } else if ("SW".equals(cppFileName)) {
+            cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/SW.cpp";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_cpp" + count + ".txt";
+        }
     }
 
     @Override
@@ -23,7 +32,7 @@ public class ExecuteCppProgram implements Runnable {
         try {
             // Diretório de saída para o arquivo executável
             String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp";
-            String exeFilePath = outputDir + "/NW_executable" + count + ".exe";
+            String exeFilePath = outputDir + "/" + cppFileName + "_executable" + count + ".exe";
 
             // Compila o arquivo C++
             System.out.println("Compilando o arquivo C++...");
@@ -74,5 +83,15 @@ public class ExecuteCppProgram implements Runnable {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        // Exemplo de uso para NW.cpp
+        Thread threadNW = new Thread(new ExecuteCppProgram(1, "sequenciaNW", "NW"));
+        threadNW.start();
+
+        // Exemplo de uso para SW.cpp
+        Thread threadSW = new Thread(new ExecuteCppProgram(2, "sequenciaSW", "SW"));
+        threadSW.start();
     }
 }

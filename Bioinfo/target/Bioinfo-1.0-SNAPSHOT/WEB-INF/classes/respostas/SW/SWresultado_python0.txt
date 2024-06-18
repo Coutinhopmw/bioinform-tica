@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Usuário\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\SW.py", line 53, in <module>
+    smith_waterman(seq1, seq2)
+  File "C:\Users\Usuário\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\SW.py", line 26, in smith_waterman
+    aligned_seq1 = seq1[i - 1] + aligned_seq1
+                                 ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'aligned_seq1' where it is not associated with a value

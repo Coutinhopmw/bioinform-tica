@@ -5,14 +5,23 @@ public class ExecutePythonScript implements Runnable {
 
     private String pythonScriptPath;
     private String outputFilePath;
-    private int cout;
+    private int count;
     private String seq;
+    private String scriptName;
 
-    public ExecutePythonScript(int cout,String seq) {
-        this.cout =cout;
-        this.seq =seq;
-        pythonScriptPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/NW.py";
-        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NWresultado_python"+cout+".txt";
+    public ExecutePythonScript(int count, String seq, String scriptName) {
+        this.count = count;
+        this.seq = seq;
+        this.scriptName = scriptName;
+        
+        // Define o caminho do script Python com base no nome do script
+        if ("NW".equals(scriptName)) {
+            pythonScriptPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/NW.py";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_python" + count + ".txt";
+        } else if ("SW".equals(scriptName)) {
+            pythonScriptPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/SW.py";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_python" + count + ".txt";
+        }
     }
 
     @Override
@@ -22,7 +31,7 @@ public class ExecutePythonScript implements Runnable {
             File outputFile = new File(outputFilePath);
 
             // Cria um processo para executar o script Python
-            ProcessBuilder pb = new ProcessBuilder("python", pythonScriptPath,seq);
+            ProcessBuilder pb = new ProcessBuilder("python", pythonScriptPath, seq);
 
             // Redireciona a saída do processo para o arquivo de saída
             pb.redirectErrorStream(true);
