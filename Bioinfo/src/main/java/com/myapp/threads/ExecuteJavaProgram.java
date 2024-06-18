@@ -14,7 +14,7 @@ public class ExecuteJavaProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/NW.java";
-        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/resultado_java" + count + ".txt";
+        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NWresultado_java" + count + ".txt";
     }
 
     @Override

@@ -61,7 +61,7 @@ public class NW {
             j--;
         }
         long endTime = System.currentTimeMillis();
-        /*Time:  */System.out.println((endTime - startTime) / 1000.0);
+        /*Time:  */System.out.printf("%.2f\n",(endTime - startTime) / 1000.0);
         /*Score: */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
         /*Gaps:  */System.out.println(countChar(barrinha.toString(), '-'));
         /*EValue:*/System.out.println("0.0");

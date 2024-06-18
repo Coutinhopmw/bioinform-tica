@@ -1,5 +1,6 @@
 package com.myapp;
 
+import com.myapp.threads.ExecuteCppProgram;
 import com.myapp.threads.ExecuteJavaProgram;
 import com.myapp.threads.ExecutePythonScript;
 import jakarta.servlet.ServletException;
@@ -31,8 +32,10 @@ private ArrayList<String> seqList = new ArrayList<>();
             for(int i = 0;i<seqList.size();i++){
                 Thread python = new Thread(new ExecutePythonScript(i,seqList.get(i)));
                 Thread java = new Thread(new ExecuteJavaProgram(i,seqList.get(i)));
+                Thread cpp = new Thread(new ExecuteCppProgram(i,seqList.get(i)));
                 python.start();
                 java.start();
+                cpp.start();
             }
             response.sendRedirect(request.getContextPath() + "/result.jsp");
         }

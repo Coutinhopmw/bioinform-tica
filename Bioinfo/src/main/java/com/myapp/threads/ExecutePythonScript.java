@@ -12,7 +12,7 @@ public class ExecutePythonScript implements Runnable {
         this.cout =cout;
         this.seq =seq;
         pythonScriptPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/NW.py";
-        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/resultado_python"+cout+".txt";
+        outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NWresultado_python"+cout+".txt";
     }
 
     @Override
