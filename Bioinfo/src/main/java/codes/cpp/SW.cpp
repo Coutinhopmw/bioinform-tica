@@ -2,10 +2,11 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <chrono>
 #include <cmath> // Para exp
 #include <iomanip> // Para setprecision
 using namespace std;
-
+using namespace std::chrono;
 // PROTÓTIPO DO ALGORÍTIMO
 
 struct Result {
@@ -15,9 +16,11 @@ struct Result {
     int gap_count;
     double e_value;
     double execution_time;
+    double percent;
 };
 
 Result smith_waterman(const string& seq1, const string& seq2, int match = 2, int mismatch = -1, int gap = -1) {
+    auto start = high_resolution_clock::now(); // Início da medição do tempo
     int m = seq1.length();
     int n = seq2.length();
     vector<vector<int>> score_matrix(m + 1, vector<int>(n + 1, 0));
@@ -48,7 +51,7 @@ Result smith_waterman(const string& seq1, const string& seq2, int match = 2, int
         }
     }
 
-    string aligned_seq1, aligned_seq2;
+    string aligned_seq1, aligned_seq2,barrinha;
     int i = max_pos.first;
     int j = max_pos.second;
     int gap_count = 0;
@@ -59,23 +62,34 @@ Result smith_waterman(const string& seq1, const string& seq2, int match = 2, int
             aligned_seq2.push_back(seq2[j - 1]);
             --i;
             --j;
+            if (seq1[i] == seq2[j]) {
+                barrinha = '|' + barrinha;
+            } else {
+                barrinha = ':' + barrinha;
+            }
         } else if (traceback_matrix[i][j] == 2) {
             aligned_seq1.push_back(seq1[i - 1]);
             aligned_seq2.push_back('-');
             --i;
             gap_count++;
+            barrinha = '-' + barrinha;
         } else if (traceback_matrix[i][j] == 3) {
             aligned_seq1.push_back('-');
             aligned_seq2.push_back(seq2[j - 1]);
             --j;
             gap_count++;
+            barrinha = '-' + barrinha;
         }
     }
+    double percent = (100.0 * count(barrinha.begin(), barrinha.end(), '|')) / barrinha.length();
+    auto stop = high_resolution_clock::now(); // Fim da medição do tempo
+    auto duration = duration_cast<microseconds>(stop - start);
+    double K = 0.1, lambda = 0.1;
+    double e_value = K * m * n * exp(-lambda * score_matrix[m][n]);
+    //reverse(aligned_seq1.begin(), aligned_seq1.end());
+    //reverse(aligned_seq2.begin(), aligned_seq2.end());
 
-    reverse(aligned_seq1.begin(), aligned_seq1.end());
-    reverse(aligned_seq2.begin(), aligned_seq2.end());
-
-    return {aligned_seq1, aligned_seq2, max_score};
+    return {aligned_seq1, aligned_seq2, max_score,gap_count,e_value,duration.count() / 1e6, percent};
 }
 
 int main(int argc, char* argv[]) {
@@ -91,6 +105,7 @@ int main(int argc, char* argv[]) {
 
     Result result = smith_waterman(v, w);
 
+    /*"Percent"*/cout << fixed << setprecision(2) << result.percent << endl;
     /*"Time:  "*/cout <<setprecision(2)<< result.execution_time << endl;
     /*"Score: "*/cout << result.score << endl;
     /*"Gaps:  "*/cout << result.gap_count << endl;

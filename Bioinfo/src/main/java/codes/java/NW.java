@@ -61,16 +61,27 @@ public class NW {
             j--;
         }
         long endTime = System.currentTimeMillis();
-        /*Time:  */System.out.printf("%.2f\n",(endTime - startTime) / 1000.0);
-        /*Score: */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
-        /*Gaps:  */System.out.println(countChar(barrinha.toString(), '-'));
-        /*EValue:*/System.out.println("0.0");
-        /*Linhas:*/System.out.println("61");
+        
+        /*Percent:*/System.out.println(Math.round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0);
+        /*Time:   */System.out.printf("%.2f\n",(endTime - startTime) / 1000.0);
+        /*Score:  */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
+        /*Gaps:   */System.out.println(countChar(barrinha.toString(), '-'));
+        /*EValue: */System.out.println("0.0");
+        /*Linhas: */System.out.println("61");
     }
     public static int countChar(String str, char ch) {
         int count = 0;
         for (char c : str.toCharArray()) {
             if (c == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+    public static int countOccurrences(StringBuilder sb, char c) {
+        int count = 0;
+        for (int i = 0; i < sb.length(); i++) {
+            if (sb.charAt(i) == c) {
                 count++;
             }
         }
