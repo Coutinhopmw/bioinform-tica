@@ -30,6 +30,7 @@ private ArrayList<String> seqList = new ArrayList<>();
             session.setAttribute("seqList", seqList); // Salva a lista na sessão
             
             for(int i = 0;i<seqList.size();i++){
+
                 Thread pythonNW = new Thread(new ExecutePythonScript(i,seqList.get(i),"NW"));
                 Thread pythonSW = new Thread(new ExecutePythonScript(i,seqList.get(i),"SW"));
                 pythonNW.start();
@@ -44,7 +45,6 @@ private ArrayList<String> seqList = new ArrayList<>();
                 Thread cppSW = new Thread(new ExecuteCppProgram(i,seqList.get(i),"SW"));
                 cppNW.start();
                 cppSW.start();
-                
             }
             response.sendRedirect(request.getContextPath() + "/result.jsp");
         }

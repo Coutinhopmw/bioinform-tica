@@ -50,7 +50,6 @@ public class ExecuteJavaProgram implements Runnable {
 
             // Nome completo da classe com o pacote
             String className = "codes.java." + javaFileName;
-
             // Cria um processo para executar o programa Java
             ProcessBuilder runProcessBuilder = new ProcessBuilder("java", "-cp", outputDir, className, seq);
 
