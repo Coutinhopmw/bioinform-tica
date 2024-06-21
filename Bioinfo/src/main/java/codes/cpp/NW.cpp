@@ -36,7 +36,6 @@ Result needleman_wunsch(const string& v, const string& w, int match_score = 1, i
         score_matrix[0][j] = j * gap_penalty;
         direction_matrix[0][j] = 2; // Esquerda
     }
-
     for (int i = 1; i <= m; ++i) {
         for (int j = 1; j <= n; ++j) {
             int match = score_matrix[i - 1][j - 1] + (v[i - 1] == w[j - 1] ? match_score : mismatch_score);
@@ -105,7 +104,7 @@ int main(int argc, char* argv[]) {
     Result result = needleman_wunsch(v, w);
 
     /*"Percent"*/cout << fixed << setprecision(2) << result.percent << endl;
-    /*"Time   "*/cout << fixed << setprecision(2) << result.execution_time << " seconds" << endl;
+    /*"Time   "*/cout << fixed << setprecision(2) << result.execution_time  << endl;
     /*"Score  "*/cout << result.score << endl;
     /*"Gaps:  "*/cout << result.gap_count << endl;
     /*"EValue:"*/cout << "0.0" /*<< fixed << setprecision(5) << result.e_value */<< endl;

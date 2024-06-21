@@ -45,7 +45,7 @@ def smith_waterman(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty=-
     tempo_execucao = fim - inicio
     '''Percent:''';print(round(((100*barrinha.count("|"))/len(barrinha)),2))
     '''Time:   ''';print(round((fim - inicio),2))
-    '''Score:  ''';print(score_matrix[len(seq1)][len(seq2)])
+    '''Score:  ''';print(max_score)
     '''Gaps:   ''';print(barrinha.count("-"))
     '''EVAlue: ''';print("0.0")
     '''Linhas: ''';print("42")

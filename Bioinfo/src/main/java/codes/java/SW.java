@@ -1,5 +1,9 @@
 package codes.java;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 public class SW {
     public static void main(String[] args) {
         if (args.length < 1) {
@@ -57,10 +61,11 @@ public class SW {
             }
         }
         long endTime = System.currentTimeMillis();
-        
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+        DecimalFormat df = new DecimalFormat("0.00", symbols);
         /*Percent:*/System.out.println(Math.round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0);
-        /*Time:   */System.out.printf("%.2f\n",(endTime - startTime) / 1000.0);
-        /*Score:  */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
+        /*Time:   */System.out.println(df.format((endTime - startTime) / 1000.0));
+        /*Score:  */System.out.println(maxScore);
         /*Gaps:   */System.out.println(countChar(barrinha.toString(), '-'));
         /*EValue: */System.out.println("0.0");
         /*Linhas: */System.out.println("56");

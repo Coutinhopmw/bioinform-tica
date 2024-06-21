@@ -2,6 +2,7 @@ package com.myapp;
 
 import com.myapp.threads.ExecuteCppProgram;
 import com.myapp.threads.ExecuteJavaProgram;
+import com.myapp.threads.ExecutePhpProgram;
 import com.myapp.threads.ExecutePythonScript;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -41,10 +42,15 @@ private ArrayList<String> seqList = new ArrayList<>();
                 javaNW.start();
                 javaSW.start();
                 
-                Thread cppNW = new Thread(new ExecuteCppProgram(i,seqList.get(i),"NW"));
+                //Thread cppNW = new Thread(new ExecuteCppProgram(i,seqList.get(i),"NW"));
                 Thread cppSW = new Thread(new ExecuteCppProgram(i,seqList.get(i),"SW"));
-                cppNW.start();
+                //cppNW.start();
                 cppSW.start();
+                
+                Thread phpNW = new Thread(new ExecutePhpProgram(i,seqList.get(i),"NW"));
+                Thread phpSW = new Thread(new ExecutePhpProgram(i,seqList.get(i),"SW"));
+                phpNW.start();
+                phpSW.start();
             }
             response.sendRedirect(request.getContextPath() + "/result.jsp");
         }

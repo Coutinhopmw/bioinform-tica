@@ -1,117 +1,102 @@
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 #include <algorithm>
 #include <chrono>
-#include <cmath> // Para exp
-#include <iomanip> // Para setprecision
+#include <math.h>
+#include <iomanip>
+
 using namespace std;
 using namespace std::chrono;
-// PROTÓTIPO DO ALGORÍTIMO
 
-struct Result {
-    string v_aligned;
-    string w_aligned;
-    int score;
-    int gap_count;
-    double e_value;
-    double execution_time;
-    double percent;
-};
-
-Result smith_waterman(const string& seq1, const string& seq2, int match = 2, int mismatch = -1, int gap = -1) {
-    auto start = high_resolution_clock::now(); // Início da medição do tempo
-    int m = seq1.length();
-    int n = seq2.length();
-    vector<vector<int>> score_matrix(m + 1, vector<int>(n + 1, 0));
-    vector<vector<int>> traceback_matrix(m + 1, vector<int>(n + 1, 0));
-
-    int max_score = 0;
-    pair<int, int> max_pos = {0, 0};
-
-    for (int i = 1; i <= m; ++i) {
-        for (int j = 1; j <= n; ++j) {
-            int match_score = score_matrix[i - 1][j - 1] + (seq1[i - 1] == seq2[j - 1] ? match : mismatch);
-            int delete_score = score_matrix[i - 1][j] + gap;
-            int insert_score = score_matrix[i][j - 1] + gap;
-            score_matrix[i][j] = max({0, match_score, delete_score, insert_score});
-
-            if (score_matrix[i][j] == match_score) {
-                traceback_matrix[i][j] = 1; // Diagonal
-            } else if (score_matrix[i][j] == delete_score) {
-                traceback_matrix[i][j] = 2; // Up
-            } else if (score_matrix[i][j] == insert_score) {
-                traceback_matrix[i][j] = 3; // Left
-            }
-
-            if (score_matrix[i][j] > max_score) {
-                max_score = score_matrix[i][j];
-                max_pos = {i, j};
-            }
-        }
-    }
-
-    string aligned_seq1, aligned_seq2,barrinha;
-    int i = max_pos.first;
-    int j = max_pos.second;
-    int gap_count = 0;
-
-    while (score_matrix[i][j] != 0) {
-        if (traceback_matrix[i][j] == 1) {
-            aligned_seq1.push_back(seq1[i - 1]);
-            aligned_seq2.push_back(seq2[j - 1]);
-            --i;
-            --j;
-            if (seq1[i] == seq2[j]) {
-                barrinha = '|' + barrinha;
-            } else {
-                barrinha = ':' + barrinha;
-            }
-        } else if (traceback_matrix[i][j] == 2) {
-            aligned_seq1.push_back(seq1[i - 1]);
-            aligned_seq2.push_back('-');
-            --i;
-            gap_count++;
-            barrinha = '-' + barrinha;
-        } else if (traceback_matrix[i][j] == 3) {
-            aligned_seq1.push_back('-');
-            aligned_seq2.push_back(seq2[j - 1]);
-            --j;
-            gap_count++;
-            barrinha = '-' + barrinha;
-        }
-    }
-    double percent = (100.0 * count(barrinha.begin(), barrinha.end(), '|')) / barrinha.length();
-    auto stop = high_resolution_clock::now(); // Fim da medição do tempo
-    auto duration = duration_cast<microseconds>(stop - start);
-    double K = 0.1, lambda = 0.1;
-    double e_value = K * m * n * exp(-lambda * score_matrix[m][n]);
-    //reverse(aligned_seq1.begin(), aligned_seq1.end());
-    //reverse(aligned_seq2.begin(), aligned_seq2.end());
-
-    return {aligned_seq1, aligned_seq2, max_score,gap_count,e_value,duration.count() / 1e6, percent};
+int score(char char1, char char2, int matchScore, int mismatchPenalty) {
+    return (char1 == char2) ? matchScore : mismatchPenalty;
 }
 
-int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        cerr << "Usage: " << argv[0] << " <string_v>" << endl;
-        return 1;
+int countChar(const string& str, char ch) {
+    int count = 0;
+    for (char c : str) {
+        if (c == ch) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int countOccurrences(const string& str, char c) {
+    int count = 0;
+    for (char x : str) {
+        if (x == c) {
+            count++;
+        }
+    }
+    return count;
+}
+
+void smithWaterman(const string& seq1, const string& seq2) {
+    auto startTime = high_resolution_clock::now();
+    int matchScore = 1;
+    int mismatchPenalty = -1;
+    int gapPenalty = -1;
+    vector<vector<int>> scoreMatrix(seq1.length() + 1, vector<int>(seq2.length() + 1, 0));
+    int maxScore = 0;
+    vector<int> maxPos(2, 0);
+
+    for (size_t i = 1; i <= seq1.length(); i++) {
+        for (size_t j = 1; j <= seq2.length(); j++) {
+            int match = scoreMatrix[i - 1][j - 1] + score(seq1[i - 1], seq2[j - 1], matchScore, mismatchPenalty);
+            int deletion = scoreMatrix[i - 1][j] + gapPenalty;
+            int insertion = scoreMatrix[i][j - 1] + gapPenalty;
+            scoreMatrix[i][j] = max(0, max(match, max(deletion, insertion)));
+            if (scoreMatrix[i][j] > maxScore) {
+                maxScore = scoreMatrix[i][j];
+                maxPos[0] = i;
+                maxPos[1] = j;
+            }
+        }
     }
 
-    string v = argv[1];
-    //cout << "Argumento recebido: " << v << endl;
+    string alignedSeq1, alignedSeq2, barrinha;
+    size_t i = maxPos[0];
+    size_t j = maxPos[1];
+    while (scoreMatrix[i][j] != 0) {
+        if (scoreMatrix[i][j] == scoreMatrix[i - 1][j - 1] + score(seq1[i - 1], seq2[j - 1], matchScore, mismatchPenalty)) {
+            alignedSeq1 = seq1[i - 1] + alignedSeq1;
+            alignedSeq2 = seq2[j - 1] + alignedSeq2;
+            barrinha = (seq1[i - 1] == seq2[j - 1]) ? '|' + barrinha : ':' + barrinha;
+            i--;
+            j--;
+        } else if (scoreMatrix[i][j] == scoreMatrix[i - 1][j] + gapPenalty) {
+            alignedSeq1 = seq1[i - 1] + alignedSeq1;
+            alignedSeq2 = '-' + alignedSeq2;
+            barrinha = '-' + barrinha;
+            i--;
+        } else {
+            alignedSeq1 = '-' + alignedSeq1;
+            alignedSeq2 = seq2[j - 1] + alignedSeq2;
+            barrinha = '-' + barrinha;
+            j--;
+        }
+    }
 
-    string w = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
+    auto endTime = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(endTime - startTime).count();
 
-    Result result = smith_waterman(v, w);
+    /*"Percent"*/cout << round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0 << endl;
+    /*"Time   "*/cout << fixed << setprecision(2) << duration / 1000.0 << endl;
+    /*"Score  "*/cout << maxScore << endl;
+    /*"Gaps:  "*/cout << countChar(barrinha, '-') << endl;
+    /*"EValue:"*/cout << "0.0" << endl;
+    /*"Linhas:"*/cout << "56" << endl;
+}
 
-    /*"Percent"*/cout << fixed << setprecision(2) << result.percent << endl;
-    /*"Time:  "*/cout <<setprecision(2)<< result.execution_time << endl;
-    /*"Score: "*/cout << result.score << endl;
-    /*"Gaps:  "*/cout << result.gap_count << endl;
-    /*"EValue:"*/cout << "0.0" /*<<setprecision(5) << result.e_value */<< endl;
-    /*"Linhas:"*/cout << "76" << endl;
-    
-
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        cerr << "Usage: " << argv[0] << " <seq1>" << endl;
+        return 1;
+    }
+    string seq1 = argv[1];
+    string seq2 = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
+    smithWaterman(seq1, seq2);
     return 0;
 }

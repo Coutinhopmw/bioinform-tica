@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 Time: 0.064 segs
 Score: 21
 Gaps: 484
 EVAlue: 0.0
 Linhas: 51
-=======
-Error: Could not find or load main class NW.java
-Caused by: java.lang.ClassNotFoundException: NW.java
->>>>>>> 6854c619f7ca2976d4aca38f2e540e81e169ed2f
