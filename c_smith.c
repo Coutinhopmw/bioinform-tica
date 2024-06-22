@@ -1,3 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#define MATCH 1;
+#define MISMATCH -1;
+#define GAP 0;
+
 void swa(char*, char*);
 
 int main(void) {
