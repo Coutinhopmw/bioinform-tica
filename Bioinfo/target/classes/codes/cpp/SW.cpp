@@ -1,102 +1,114 @@
 #include <iostream>
-#include <string>
 #include <vector>
+#include <string>
 #include <algorithm>
 #include <chrono>
-#include <math.h>
-#include <iomanip>
+#include <cmath> // Para exp
+#include <iomanip> // Para setprecision
 
 using namespace std;
 using namespace std::chrono;
 
-int score(char char1, char char2, int matchScore, int mismatchPenalty) {
-    return (char1 == char2) ? matchScore : mismatchPenalty;
-}
+struct Result {
+    string v_aligned;
+    string w_aligned;
+    int score;
+    int gap_count;
+    double e_value;
+    double execution_time;
+    double percent;
+};
 
-int countChar(const string& str, char ch) {
-    int count = 0;
-    for (char c : str) {
-        if (c == ch) {
-            count++;
-        }
+Result needleman_wunsch(const string& v, const string& w, int match_score = 1, int mismatch_score = -1, int gap_penalty = -1) {
+    auto start = high_resolution_clock::now(); // Início da medição do tempo
+
+    int m = v.size();
+    int n = w.size();
+    vector<vector<int>> score_matrix(m + 1, vector<int>(n + 1, 0));
+    vector<vector<int>> direction_matrix(m + 1, vector<int>(n + 1, 0));
+
+    for (int i = 1; i <= m; ++i) {
+        score_matrix[i][0] = i * gap_penalty;
+        direction_matrix[i][0] = 1; // Acima
     }
-    return count;
-}
 
-int countOccurrences(const string& str, char c) {
-    int count = 0;
-    for (char x : str) {
-        if (x == c) {
-            count++;
-        }
+    for (int j = 1; j <= n; ++j) {
+        score_matrix[0][j] = j * gap_penalty;
+        direction_matrix[0][j] = 2; // Esquerda
     }
-    return count;
-}
+    for (int i = 1; i <= m; ++i) {
+        for (int j = 1; j <= n; ++j) {
+            int match = score_matrix[i - 1][j - 1] + (v[i - 1] == w[j - 1] ? match_score : mismatch_score);
+            int delete_score = score_matrix[i - 1][j] + gap_penalty;
+            int insert_score = score_matrix[i][j - 1] + gap_penalty;
+            score_matrix[i][j] = max({match, delete_score, insert_score});
 
-void smithWaterman(const string& seq1, const string& seq2) {
-    auto startTime = high_resolution_clock::now();
-    int matchScore = 1;
-    int mismatchPenalty = -1;
-    int gapPenalty = -1;
-    vector<vector<int>> scoreMatrix(seq1.length() + 1, vector<int>(seq2.length() + 1, 0));
-    int maxScore = 0;
-    vector<int> maxPos(2, 0);
-
-    for (size_t i = 1; i <= seq1.length(); i++) {
-        for (size_t j = 1; j <= seq2.length(); j++) {
-            int match = scoreMatrix[i - 1][j - 1] + score(seq1[i - 1], seq2[j - 1], matchScore, mismatchPenalty);
-            int deletion = scoreMatrix[i - 1][j] + gapPenalty;
-            int insertion = scoreMatrix[i][j - 1] + gapPenalty;
-            scoreMatrix[i][j] = max(0, max(match, max(deletion, insertion)));
-            if (scoreMatrix[i][j] > maxScore) {
-                maxScore = scoreMatrix[i][j];
-                maxPos[0] = i;
-                maxPos[1] = j;
+            if (score_matrix[i][j] == match) {
+                direction_matrix[i][j] = 3; // Diagonal
+            } else if (score_matrix[i][j] == delete_score) {
+                direction_matrix[i][j] = 1; // Acima
+            } else {
+                direction_matrix[i][j] = 2; // Esquerda
             }
         }
     }
 
-    string alignedSeq1, alignedSeq2, barrinha;
-    size_t i = maxPos[0];
-    size_t j = maxPos[1];
-    while (scoreMatrix[i][j] != 0) {
-        if (scoreMatrix[i][j] == scoreMatrix[i - 1][j - 1] + score(seq1[i - 1], seq2[j - 1], matchScore, mismatchPenalty)) {
-            alignedSeq1 = seq1[i - 1] + alignedSeq1;
-            alignedSeq2 = seq2[j - 1] + alignedSeq2;
-            barrinha = (seq1[i - 1] == seq2[j - 1]) ? '|' + barrinha : ':' + barrinha;
-            i--;
-            j--;
-        } else if (scoreMatrix[i][j] == scoreMatrix[i - 1][j] + gapPenalty) {
-            alignedSeq1 = seq1[i - 1] + alignedSeq1;
-            alignedSeq2 = '-' + alignedSeq2;
+    string v_aligned, w_aligned, barrinha;
+    int i = m, j = n;
+    int gap_count = 0;
+
+    while (i > 0 || j > 0) {
+        if (direction_matrix[i][j] == 3) {
+            v_aligned = v[i - 1] + v_aligned;
+            w_aligned = w[j - 1] + w_aligned;
+            --i;
+            --j;
+            if (v[i] == w[j]) {
+                barrinha = '|' + barrinha;
+            } else {
+                barrinha = ':' + barrinha;
+            }
+        } else if (direction_matrix[i][j] == 1) {
+            v_aligned = v[i - 1] + v_aligned;
+            w_aligned = '-' + w_aligned;
+            --i;
+            gap_count++;
             barrinha = '-' + barrinha;
-            i--;
         } else {
-            alignedSeq1 = '-' + alignedSeq1;
-            alignedSeq2 = seq2[j - 1] + alignedSeq2;
+            v_aligned = '-' + v_aligned;
+            w_aligned = w[j - 1] + w_aligned;
+            --j;
+            gap_count++;
             barrinha = '-' + barrinha;
-            j--;
         }
     }
 
-    auto endTime = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(endTime - startTime).count();
+    double percent = (100.0 * count(barrinha.begin(), barrinha.end(), '|')) / barrinha.length();
+    auto stop = high_resolution_clock::now(); // Fim da medição do tempo
+    auto duration = duration_cast<microseconds>(stop - start);
+    double K = 0.1, lambda = 0.1;
+    double e_value = K * m * n * exp(-lambda * score_matrix[m][n]);
 
-    /*"Percent"*/cout << round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0 << endl;
-    /*"Time   "*/cout << fixed << setprecision(2) << duration / 1000.0 << endl;
-    /*"Score  "*/cout << maxScore << endl;
-    /*"Gaps:  "*/cout << countChar(barrinha, '-') << endl;
-    /*"EValue:"*/cout << "0.0" << endl;
-    /*"Linhas:"*/cout << "56" << endl;
+    return {v_aligned, w_aligned, score_matrix[m][n], gap_count, e_value, duration.count() / 1e6, percent};
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
     if (argc < 2) {
-        cerr << "Usage: " << argv[0] << " <seq1>" << endl;
+        cerr << "Usage: " << argv[0] << " <string_v>" << endl;
         return 1;
     }
-    string seq1 = argv[1];
-    string seq2 = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
-    smithWaterman(seq1, seq2);
+
+    string v = argv[1];
+    string w = argv[2];
+
+    Result result = needleman_wunsch(v, w);
+
+    //*"Percent"*/cout << fixed << setprecision(2) << result.percent << endl;
+    /*"Time   "*/cout << fixed << setprecision(2) << result.execution_time  << endl;
+    /*"Score  "*/cout << result.score << endl;
+    /*"Gaps:  "*/cout << result.gap_count << endl;
+    /*"EValue:"*/cout << "0.0" /*<< fixed << setprecision(5) << result.e_value */<< endl;
+    /*"Linhas:"*/cout << "76" << endl;
+
     return 0;
 }

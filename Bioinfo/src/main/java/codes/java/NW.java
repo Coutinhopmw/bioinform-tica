@@ -68,7 +68,7 @@ public class NW {
         long endTime = System.currentTimeMillis();
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         DecimalFormat df = new DecimalFormat("0.00", symbols);
-        /*Percent:*/System.out.println(Math.round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0);
+        //*Percent:*/System.out.println(Math.round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0);
         /*Time:   */System.out.println(df.format((endTime - startTime) / 1000.0));
         /*Score:  */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
         /*Gaps:   */System.out.println(countChar(barrinha.toString(), '-'));

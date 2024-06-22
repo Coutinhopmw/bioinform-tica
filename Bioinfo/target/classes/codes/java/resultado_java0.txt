@@ -1,5 +1,0 @@
-Time: 0.064 segs
-Score: 21
-Gaps: 484
-EVAlue: 0.0
-Linhas: 51

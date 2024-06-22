@@ -13,7 +13,7 @@ public class ExecutePhpProgram implements Runnable {
     private String phpFileName;
 
     // Caminho para o executável PHP no seu sistema
-    private static final String PHP_EXECUTABLE = "C:/php/php.exe"; // Ajuste conforme o seu ambiente
+    private static final String PHP_EXECUTABLE = "php"; // Ajuste conforme o seu ambiente
 
     public ExecutePhpProgram(int count, String seq, String phpFileName) {
         this.count = count;
@@ -22,9 +22,18 @@ public class ExecutePhpProgram implements Runnable {
 
         // Define o caminho do arquivo PHP com base no nome do arquivo
         if ("NW".equals(phpFileName)) {
+            // phpFilePath = "/Bioinfo/main/java/codes/php/NW.php";
+            // outputFilePath = "/Bioinfo/main/java/respostas/NW/NWresultado_php" + count + ".txt";
+
+            // Se não estiver usando docker:
             phpFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/php/NW.php";
             outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_php" + count + ".txt";
+        
         } else if ("SW".equals(phpFileName)) {
+            // phpFilePath = "/Bioinfo/main/java/codes/php/SW.php";
+            // outputFilePath = "/Bioinfo/main/java/respostas/SW/SWresultado_php" + count + ".txt";
+
+            // Se não estiver usando docker lembre de atulizar seu caminho:
             phpFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/php/SW.php";
             outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_php" + count + ".txt";
         }
@@ -37,7 +46,11 @@ public class ExecutePhpProgram implements Runnable {
             File outputFile = new File(outputFilePath);
 
             // Cria um processo para executar o programa PHP
-            System.out.println("Executando o programa PHP...");
+            if ("NW".equals(phpFileName)) {
+                System.out.println("Php    NW executando o arquivo...");
+            } else if ("SW".equals(phpFileName)) {
+              System.out.println("Php    SW executando o arquivo...");
+            }
             ProcessBuilder processBuilder = new ProcessBuilder(PHP_EXECUTABLE, phpFilePath, seq);
 
             // Redireciona a saída do processo para o arquivo de saída
@@ -54,14 +67,19 @@ public class ExecutePhpProgram implements Runnable {
             // Aguarda a execução do processo e obtém o código de retorno
             int exitCode = process.waitFor();
             if (exitCode != 0) {
-                System.out.println("Erro na execução. Código de retorno: " + exitCode);
-                System.out.println("Erro de execução: " + error);
+                if ("NW".equals(phpFileName)) {
+                    System.out.println("Php    NW Erro na execucao. Codigo de retorno: " + exitCode);
+                } else if ("SW".equals(phpFileName)) {
+                    System.out.println("Php    SW na execucao. Codigo de retorno: " + exitCode);
+                }
+                
             } else {
-                System.out.println("Programa PHP executado com sucesso.");
+                if ("NW".equals(phpFileName)) {
+                    System.out.println("Php    NW programa executado");
+                } else if ("SW".equals(phpFileName)) {
+                  System.out.println("Php    SW programa executado");
+                }
             }
-
-            // Exibe o resultado da execução
-            System.out.println("Código de retorno da execução: " + exitCode);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

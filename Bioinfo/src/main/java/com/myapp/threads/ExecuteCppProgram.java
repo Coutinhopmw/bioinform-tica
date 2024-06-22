@@ -1,6 +1,7 @@
 package com.myapp.threads;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -11,19 +12,30 @@ public class ExecuteCppProgram implements Runnable {
     private int count;
     private String seq;
     private String cppFileName;
+    private String directoryPath;
 
     public ExecuteCppProgram(int count, String seq, String cppFileName) {
         this.count = count;
         this.seq = seq;
         this.cppFileName = cppFileName;
-        
+        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos_de_dados";
+
         // Define o caminho do arquivo C++ com base no nome do arquivo
         if ("NW".equals(cppFileName)) {
+            // cppFilePath = "/Bioinfo/main/java/codes/cpp/NW.cpp";
+            // outputFilePath = "/Bioinfo/main/java/respostas/NW/NWresultado_cpp" + count + ".txt";
+
+            // Se não estiver usando docker:
             cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/NW.cpp";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_cpp" + count + ".txt";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/SWresultado_c_plus" + count + ".txt";
+        
         } else if ("SW".equals(cppFileName)) {
+            // cppFilePath = "/Bioinfo/main/java/codes/cpp/SW.cpp";
+            // outputFilePath = "/Bioinfo/main/java/respostas/SW/SWresultado_cpp" + count + ".txt";
+
+            // Se não estiver usando docker lembre de atulizar seu caminho:
             cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/SW.cpp";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_cpp" + count + ".txt";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_c_plus" + count + ".txt";
         }
     }
 
@@ -31,55 +43,84 @@ public class ExecuteCppProgram implements Runnable {
     public void run() {
         try {
             // Diretório de saída para o arquivo executável
+            // String outputDir = "/Bioinfo/main/java/codes/cpp";
+
+            // Se não estiver usando docker lembre de atulizar seu caminho:
             String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp";
             String exeFilePath = outputDir + "/" + cppFileName + "_executable" + count + ".exe";
 
             // Compila o arquivo C++
-            System.out.println("Compilando o arquivo C++...");
+            if ("NW".equals(cppFileName)) {
+                System.out.println("Cpp    NW executando o arquivo...");
+            } else if ("SW".equals(cppFileName)) {
+                System.out.println("Cpp    SW executando o arquivo...");
+            }
+
             ProcessBuilder compileProcessBuilder = new ProcessBuilder("g++", "-o", exeFilePath, cppFilePath);
             Process compileProcess = compileProcessBuilder.start();
             
             // Captura a saída de erro da compilação
             Scanner compileErrorStream = new Scanner(compileProcess.getErrorStream()).useDelimiter("\\A");
-            String compileError = compileErrorStream.hasNext() ? compileErrorStream.next() : "";
-            
+
             int compileExitCode = compileProcess.waitFor();
             if (compileExitCode != 0) {
-                System.out.println("Erro na compilação. Código de retorno: " + compileExitCode);
-                System.out.println("Erro de compilação: " + compileError);
+                if ("NW".equals(cppFileName)) {
+                    System.out.println("Cpp    NW Erro na compilacao. Codigo de retorno: " + compileExitCode);
+               } else if ("SW".equals(cppFileName)) {
+                  System.out.println("Cpp    SW Erro na compilacao. Codigo de retorno: " + compileExitCode);
+               }
                 return;
             }
-            System.out.println("Compilação bem-sucedida.");
+            if ("NW".equals(cppFileName)) {
+                System.out.println("Cpp    NW compilacao bem-sucedida.");
+            } else if ("SW".equals(cppFileName)) {
+                System.out.println("Cpp    SW compilacao bem-sucedida.");
+            }
 
             // Cria um arquivo para armazenar a saída
             File outputFile = new File(outputFilePath);
+            FileWriter fileWriter = new FileWriter(outputFile, true);
 
-            // Cria um processo para executar o programa C++
-            System.out.println("Executando o programa C++...");
-            ProcessBuilder runProcessBuilder = new ProcessBuilder(exeFilePath, seq);
+            
+            // System.out.println("File aberto");
+            File dir = new File(directoryPath);
+            if (!dir.exists()) {
+                System.out.println("Diretório não existe: " + directoryPath);
+            }
+            // System.out.println("dir aberto");
+            File[] files = dir.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    try (Scanner fileScanner = new Scanner(file)) {
+                        String firstLine = fileScanner.nextLine();
+                        //System.err.println(firstLine);
+                        String secondLine = fileScanner.hasNextLine() ? fileScanner.nextLine() : "";
+                        //System.err.println(secondLine);
 
-            // Redireciona a saída do processo para o arquivo de saída
-            runProcessBuilder.redirectErrorStream(true);
-            runProcessBuilder.redirectOutput(outputFile);
+                        fileWriter.write(firstLine+"\n");
 
-            // Inicia o processo
-            Process runProcess = runProcessBuilder.start();
+                        ProcessBuilder runProcessBuilder = new ProcessBuilder(exeFilePath, seq, secondLine);
+                        runProcessBuilder.redirectErrorStream(true);
 
-            // Captura a saída de erro da execução
-            Scanner runErrorStream = new Scanner(runProcess.getErrorStream()).useDelimiter("\\A");
-            String runError = runErrorStream.hasNext() ? runErrorStream.next() : "";
+                        Process runProcess = runProcessBuilder.start();
+                        int runExitCode = runProcess.waitFor();
 
-            // Aguarda a execução do processo e obtém o código de retorno
-            int runExitCode = runProcess.waitFor();
-            if (runExitCode != 0) {
-                System.out.println("Erro na execução. Código de retorno: " + runExitCode);
-                System.out.println("Erro de execução: " + runError);
-            } else {
-                System.out.println("Programa C++ executado com sucesso.");
+                        Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
+                        String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
+                        fileWriter.write(runOutput);
+
+                        if (runExitCode != 0) {
+                            // System.out.println("Erro na execuçao. Codigo de retorno: " + runExitCode);
+                        } else {
+                            // System.out.println("Programa C++ executado com sucesso.");
+                        }
+                    } catch (IOException | InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
 
-            // Exibe o resultado da execução
-            System.out.println("Código de retorno da execução: " + runExitCode);
+            fileWriter.close();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

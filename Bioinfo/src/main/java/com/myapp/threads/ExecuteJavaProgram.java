@@ -1,7 +1,9 @@
 package com.myapp.threads;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class ExecuteJavaProgram implements Runnable {
 
@@ -10,17 +12,29 @@ public class ExecuteJavaProgram implements Runnable {
     private int count;
     private String seq;
     private String javaFileName;
+    private String directoryPath;
 
     public ExecuteJavaProgram(int count, String seq, String javaFileName) {
         this.count = count;
         this.seq = seq;
         this.javaFileName = javaFileName;
+        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos_de_dados";
+
         
         // Define o caminho do arquivo Java com base no nome do arquivo
         if ("NW".equals(javaFileName)) {
+            // javaFilePath = "/Bioinfo/main/java/codes/java/NW.java";
+            // outputFilePath = "/Bioinfo/main/java/respostas/NW/NWresultado_java" + count + ".txt";
+
+            // Se não estiver usando docker:
             javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/NW.java";
             outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_java" + count + ".txt";
+        
         } else if ("SW".equals(javaFileName)) {
+            // javaFilePath = "/Bioinfo/main/java/codes/java/SW.java";
+            // outputFilePath = "/Bioinfo/main/java/respostas/SW/SWresultado_java" + count + ".txt";
+
+            // Se não estiver usando docker lembre de atulizar seu caminho:
             javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/SW.java";
             outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_java" + count + ".txt";
         }
@@ -30,7 +44,16 @@ public class ExecuteJavaProgram implements Runnable {
     public void run() {
         try {
             // Diretório de saída para arquivos .class
-            String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java";
+            // String outputDir = "/Bioinfo/target/classes/";
+
+            // Se não estiver usando docker lembre de atulizar seu caminho:
+            String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/target/classes/";
+
+            if ("NW".equals(javaFileName)) {
+                System.out.println("Java   NW executando o arquivo...");
+            } else if ("SW".equals(javaFileName)) {
+              System.out.println("Java   SW executando o arquivo...");
+            }
 
             // Compila o arquivo Java
             ProcessBuilder compileProcessBuilder = new ProcessBuilder("javac", "-d", outputDir, javaFilePath);
@@ -38,33 +61,57 @@ public class ExecuteJavaProgram implements Runnable {
             int compileExitCode = compileProcess.waitFor();
             if (compileExitCode != 0) {
                  if ("NW".equals(javaFileName)) {
-                     System.out.println("JAVA NW Erro na compilação. Código de retorno: " + compileExitCode);
+                     System.out.println("Java   NW Erro na compilacao. Codigo de retorno: " + compileExitCode);
                 } else if ("SW".equals(javaFileName)) {
-                   System.out.println("JAVA SW Erro na compilação. Código de retorno: " + compileExitCode);
+                   System.out.println("Java   SW Erro na compilacao. Codigo de retorno: " + compileExitCode);
                 }
                 return;
             }
 
             // Cria um arquivo para armazenar a saída
             File outputFile = new File(outputFilePath);
+            FileWriter fileWriter = new FileWriter(outputFile, true);
 
-            // Nome completo da classe com o pacote
-            String className = "codes.java." + javaFileName;
-            // Cria um processo para executar o programa Java
-            ProcessBuilder runProcessBuilder = new ProcessBuilder("java", "-cp", outputDir, className, seq);
+            // Lê os arquivos de entrada do diretório especificado
+            File dir = new File(directoryPath);
+            if (!dir.exists()) {
+                System.out.println("Diretório não existe: " + directoryPath);
+                return;
+            }
 
-            // Redireciona a saída do processo para o arquivo de saída
-            runProcessBuilder.redirectErrorStream(true);
-            runProcessBuilder.redirectOutput(outputFile);
+            File[] files = dir.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if (file.isFile() && file.getName().endsWith(".fasta")) {
+                        try (Scanner fileScanner = new Scanner(file)) {
+                            String firstLine = fileScanner.nextLine();
+                            String secondLine = fileScanner.hasNextLine() ? fileScanner.nextLine() : "";
 
-            // Inicia o processo
-            Process runProcess = runProcessBuilder.start();
+                            fileWriter.write(firstLine+"\n");
 
-            // Aguarda a execução do processo e obtém o código de retorno
-            int runExitCode = runProcess.waitFor();
+                            // Executa o programa Java compilado
+                            ProcessBuilder runProcessBuilder = new ProcessBuilder("java", "-cp", outputDir, javaFileName, seq, secondLine);
+                            runProcessBuilder.redirectErrorStream(true);
+                            Process runProcess = runProcessBuilder.start();
+                            int runExitCode = runProcess.waitFor();
 
-            // Exibe o resultado da execução
-            System.out.println("Programa Java executado. Código de retorno: " + runExitCode);
+                            // Lê a saída do programa Java
+                            Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
+                            String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
+                            fileWriter.write(runOutput);
+
+                            if (runExitCode != 0) {
+                                System.out.println("Erro na execução. Código de retorno: " + runExitCode);
+                            } else {
+                                System.out.println("Programa Java executado com sucesso.");
+                            }
+                        } catch (IOException | InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+            fileWriter.close();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
