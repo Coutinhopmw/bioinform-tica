@@ -1,6 +1,6 @@
 <?php
 
-function smith_score($seq1, $seq2, $match, $mismatch, $gap) {
+function smith_score($seq1, $seq2, $match_penalty, $mismatch_penalty, $gap_penalty) {
     $len1 = strlen($seq1); 
     $len2 = strlen($seq2);
 
@@ -11,13 +11,11 @@ function smith_score($seq1, $seq2, $match, $mismatch, $gap) {
 
     for ($i = 1; $i <= $len1; $i++) {
         for ($j = 1; $j <= $len2; $j++) {
-            $scoreDiag = ($seq1[$i - 1] == $seq2[$j - 1]) ? $match : $mismatch;
-            $diag = $score_matrix[$i - 1][$j - 1] + $scoreDiag;
-            $up = $score_matrix[$i - 1][$j] + $gap;
-            $left = $score_matrix[$i][$j - 1] + $gap;
-            $score_matrix[$i][$j] = max(0, $diag, $up, $left);
+            $score_diag = $score_matrix[$i - 1][$j - 1] + ((score($seq1[$i-1], $seq2[$j-1]) == 1) ? $match_penalty : $mismatch_penalty);
+            $score_up = $score_matrix[$i - 1][$j] + $gap_penalty;
+            $score_left = $score_matrix[$i][$j - 1] + $gap_penalty;
+            $score_matrix[$i][$j] = max(0, $score_diag, $score_up, $score_left);
 
-            // Identificação do ponto de maior pontuação
             if ($score_matrix[$i][$j] > $maxScore) {
                 $maxScore = $score_matrix[$i][$j];
                 $max_pos = [$i, $j];
@@ -31,9 +29,9 @@ function score($char1, $char2) {
     return ($char1 == $char2) ? 1 : -1;
 }
 
-function smithWaterman($seq1, $seq2, $match, $mismatch, $gap) {
-    // Traçar de volta para encontrar a subsequência alinhada de maior similaridade
-    $matrix = smith_score($seq1, $seq2, $match, $mismatch, $gap);
+function smith_waterman($seq1, $seq2, $match_penalty, $mismatch_penalty, $gap_penalty) {
+
+    $matrix = smith_score($seq1, $seq2, $match_penalty, $mismatch_penalty, $gap_penalty);
     list($i, $j) = $matrix['score_pos'];
     $score_matrix = $matrix['matrix'];
     $align1 = '';
@@ -52,7 +50,7 @@ function smithWaterman($seq1, $seq2, $match, $mismatch, $gap) {
             }                
             $i--;
             $j--;
-        } elseif ($score_matrix[$i][$j] == $score_matrix[$i - 1][$j] + $gap) {
+        } elseif ($score_matrix[$i][$j] == $score_matrix[$i - 1][$j] + $gap_penalty) {
             $align1 = $seq1[$i - 1] . $align1;
             $align2 = '-' . $align2;
             $barrinha = '-' . $barrinha;
@@ -77,10 +75,10 @@ function smithWaterman($seq1, $seq2, $match, $mismatch, $gap) {
 // Argumentos da linha de comando
 $seq1 = $argv[1];
 //$seq2 = $argv[2];
-$seq2 = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
+$seq2 = "TTTCGGCGAATTGAGAGAAATTAGGTGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
 
 $start = microtime(true);
-$result = smithWaterman($seq1, $seq2, 1, -1, -1);
+$result = smith_waterman($seq1, $seq2, 1, -1, -1);
 $time = round((microtime(true) - $start),2);
 $score = $result['score'];
 $qtd_gap = $result['gaps'];
@@ -91,4 +89,14 @@ $percent = round(((100.0 * substr_count($barrinha, '|')) / strlen($barrinha)) * 
 /*Time:    */echo $time . "\n";
 /*Score:   */echo $score . "\n";
 /*Gap:     */echo $qtd_gap . "\n";
+
+$text = "$time\n$score\n$qtd_gap\n$evalue";
+
+    $arquivo = fopen("resultados_SW_php.txt", "w");
+    if ($arquivo == false){
+        die ('Não foi possível criar o arquivo.');
+    } else{
+        fwrite($arquivo, $text);
+    }
+
 ?>
