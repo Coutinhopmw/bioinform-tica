@@ -12,7 +12,6 @@ function smith_score($seq1, $seq2, $match, $mismatch, $gap) {
             $up = $score_matrix[$i - 1][$j] + $gap;
             $left = $score_matrix[$i][$j - 1] + $gap;
             $score_matrix[$i][$j] = max(0, $diag, $up, $left);
-            // Identificação do ponto de maior pontuação
             if ($score_matrix[$i][$j] > $maxScore) {
                 $maxScore = $score_matrix[$i][$j];
                 $max_pos = [$i, $j];
@@ -25,7 +24,6 @@ function score($char1, $char2) {
     return ($char1 == $char2) ? 1 : -1;
 }
 function smithWaterman($seq1, $seq2, $match, $mismatch, $gap) {
-    // Traçar de volta para encontrar a subsequência alinhada de maior similaridade
     $matrix = smith_score($seq1, $seq2, $match, $mismatch, $gap);
     list($i, $j) = $matrix['score_pos'];
     $score_matrix = $matrix['matrix'];
@@ -60,17 +58,12 @@ function smithWaterman($seq1, $seq2, $match, $mismatch, $gap) {
     }
     return ['score' => $matrix['score'], 'gaps' => $gaps, 'align1' => $align1, 'align2' => $align2, 'barrinha' => $barrinha];
 }
-
-// Verificar se o script foi chamado corretamente
-// if ($argc < 3) {
-//     die("Usage: php script.php <seq1> <seq2>\n");
-// }
-
-// Argumentos da linha de comando
+function calculate_evalue($score, $m, $n, $lambda_value) {
+    $K = 0.1; // Constante dependente do sistema de pontuação
+    return $K * $m * $n * exp(-$lambda_value * $score);
+}
 $seq1 = $argv[1];
-//$seq2 = $argv[2];
-$seq2 = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
-
+$seq2 = $argv[2];
 $start = microtime(true);
 $result = smithWaterman($seq1, $seq2, 1, -1, -1);
 $time = round((microtime(true) - $start),2);
@@ -78,11 +71,13 @@ $score = $result['score'];
 $qtd_gap = $result['gaps'];
 $barrinha = $result['barrinha'];
 $percent = round(((100.0 * substr_count($barrinha, '|')) / strlen($barrinha)) * 100.0) / 100.0;
-
-//*Percento:*/echo $percent . "\n";
+$lambda_value = 9.162242926908048;
+$m = strlen($seq1); // Comprimento da sequência 1
+$n = strlen($seq2); // Comprimento da sequência 2
+$evalue = round(calculate_evalue($score, $m, $n, $lambda_value),2);
 /*Time:    */echo $time . "\n";
 /*Score:   */echo $score . "\n";
 /*Gap:     */echo $qtd_gap . "\n";
-/*Evalue   */echo "0.0\n";
-/*lijnhas  */echo "62\n";
+/*Evalue   */echo $evalue . "\n";
+/*lijnhas  */echo "83\n";
 ?>

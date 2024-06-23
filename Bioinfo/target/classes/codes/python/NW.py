@@ -1,11 +1,15 @@
 import time
 import sys
+import math
 def score(char1, char2):
-  if char1==char2:
-    return 1
-  else:
-    return -1
-def needleman_wunsch_reconstruct(seq1, seq2, match_score, mismatch_penalty, gap_penalty):
+    if char1 == char2:
+        return 1
+    else:
+        return -1
+def calculate_evalue(score, m, n, lambda_value):
+    K = 0.1
+    return K * m * n * math.exp(-lambda_value * (score/4))*math.exp(-lambda_value * (score/4))* math.exp(-lambda_value * (score/4))*math.exp(-lambda_value * (score/4))
+def needleman_wunsch_reconstruct(seq1, seq2, match_score, mismatch_penalty, gap_penalty, lambda_value):
     inicio = time.perf_counter()
     score_matrix = [[0 for _ in range(len(seq2) + 1)] for _ in range(len(seq1) + 1)]
     for i in range(len(seq1) + 1):
@@ -19,7 +23,7 @@ def needleman_wunsch_reconstruct(seq1, seq2, match_score, mismatch_penalty, gap_
             delete_seq2_ij = score_matrix[i][j - 1] + gap_penalty
             score_matrix[i][j] = max(match_score_ij, delete_seq1_ij, delete_seq2_ij)
     alignment_seq1 = alignment_seq2 = barrinha = ''
-    i,j = len(seq1),len(seq2)
+    i, j = len(seq1), len(seq2)
     while i > 0 and j > 0:
         if score_matrix[i][j] == score_matrix[i - 1][j - 1] + score(seq1[i - 1], seq2[j - 1]):
             alignment_seq1 = seq1[i - 1] + alignment_seq1
@@ -51,12 +55,16 @@ def needleman_wunsch_reconstruct(seq1, seq2, match_score, mismatch_penalty, gap_
         barrinha = '-' + barrinha
         j -= 1
     fim = time.perf_counter()
-    #'''Percent:''';print(round(((100*barrinha.count("|"))/len(barrinha)),2))
-    '''Time:   ''';print(round((fim - inicio),2))
-    '''Score:  ''';print(score_matrix[len(seq1)][len(seq2)])
-    '''Gaps:   ''';print(barrinha.count("-"))
-    '''EVAlue: ''';print("0.0")
-    '''Linhas: ''';print("53")
+    alignment_score = score_matrix[len(seq1)][len(seq2)]
+    gaps_count = barrinha.count("-")
+    alignment_length = len(alignment_seq1)
+    evalue = calculate_evalue(alignment_score, len(seq1), len(seq2), lambda_value)
+    print(round((fim - inicio), 2))
+    print(alignment_score)
+    print(gaps_count)
+    print(round(evalue,2))
+    print("70")
 seq1 = sys.argv[1]
-seq2 = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC"
-needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1)
+seq2 = sys.argv[2]
+lambda_value = 9.162242926908048
+needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)

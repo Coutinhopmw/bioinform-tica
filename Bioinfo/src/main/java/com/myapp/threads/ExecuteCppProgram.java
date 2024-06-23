@@ -18,7 +18,7 @@ public class ExecuteCppProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.cppFileName = cppFileName;
-        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos_de_dados";
+        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
 
         // Define o caminho do arquivo C++ com base no nome do arquivo
         if ("NW".equals(cppFileName)) {
@@ -27,7 +27,7 @@ public class ExecuteCppProgram implements Runnable {
 
             // Se não estiver usando docker:
             cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/NW.cpp";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/SWresultado_c_plus" + count + ".txt";
+            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_c_plus" + count + ".txt";
         
         } else if ("SW".equals(cppFileName)) {
             // cppFilePath = "/Bioinfo/main/java/codes/cpp/SW.cpp";

@@ -86,12 +86,12 @@ public class MainServlet extends HttpServlet {
         }
 
         // File javaClass = new File("/Bioinfo/target/classes/codes/java");
-        File javaClass = new File("C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/target/classes/codes/java");
+        File javaClass = new File("C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java");
         files = javaClass.listFiles();
         
         if (files != null) {
             for (File file : files) {
-                if (file.isFile()) {
+                if (file.isFile()&& file.getName().endsWith(".class")) {
                     file.delete();
                 }
             }

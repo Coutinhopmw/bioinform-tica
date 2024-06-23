@@ -18,7 +18,7 @@ public class ExecuteJavaProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.javaFileName = javaFileName;
-        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos_de_dados";
+        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
 
         
         // Define o caminho do arquivo Java com base no nome do arquivo
@@ -47,15 +47,16 @@ public class ExecuteJavaProgram implements Runnable {
             // String outputDir = "/Bioinfo/target/classes/";
 
             // Se não estiver usando docker lembre de atulizar seu caminho:
-            String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/target/classes/";
+            String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/";
 
             if ("NW".equals(javaFileName)) {
                 System.out.println("Java   NW executando o arquivo...");
             } else if ("SW".equals(javaFileName)) {
               System.out.println("Java   SW executando o arquivo...");
             }
-
+            
             // Compila o arquivo Java
+            System.out.println(javaFileName);
             ProcessBuilder compileProcessBuilder = new ProcessBuilder("javac", "-d", outputDir, javaFilePath);
             Process compileProcess = compileProcessBuilder.start();
             int compileExitCode = compileProcess.waitFor();
@@ -90,7 +91,8 @@ public class ExecuteJavaProgram implements Runnable {
                             fileWriter.write(firstLine+"\n");
 
                             // Executa o programa Java compilado
-                            ProcessBuilder runProcessBuilder = new ProcessBuilder("java", "-cp", outputDir, javaFileName, seq, secondLine);
+                            String className = "codes.java." + javaFileName;
+                            ProcessBuilder runProcessBuilder = new ProcessBuilder("java", "-cp", outputDir,className, seq, secondLine);
                             runProcessBuilder.redirectErrorStream(true);
                             Process runProcess = runProcessBuilder.start();
                             int runExitCode = runProcess.waitFor();
@@ -101,9 +103,9 @@ public class ExecuteJavaProgram implements Runnable {
                             fileWriter.write(runOutput);
 
                             if (runExitCode != 0) {
-                                System.out.println("Erro na execução. Código de retorno: " + runExitCode);
+                               // System.out.println("Erro na execução. Código de retorno: " + runExitCode);
                             } else {
-                                System.out.println("Programa Java executado com sucesso.");
+                               // System.out.println("Programa Java executado com sucesso.");
                             }
                         } catch (IOException | InterruptedException e) {
                             e.printStackTrace();

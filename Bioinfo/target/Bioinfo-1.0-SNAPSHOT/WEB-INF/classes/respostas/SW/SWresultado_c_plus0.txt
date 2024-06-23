@@ -1,60 +1,60 @@
 >MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
-0.11
--227
-544
-0.0
-76
+0.14
+27
+100
+0.00
+96
 >KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
-0.09
--215
-567
-0.0
-76
+0.14
+36
+148
+0.00
+96
 >PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
-0.19
--240
-574
-0.0
-76
->OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
-0.09
--267
-595
-0.0
-76
->JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
-0.10
--223
-553
-0.0
-76
->AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
-0.11
--283
-610
-0.0
-76
->L06826.1 Epstein-Barr virus DNA polymerase mRNA
-0.10
--250
-553
-0.0
-76
->LT964969.1 Chikungunya virus partial viral cRNA for glicoprotein (E1 gene), strain chikungunya virus, isolate ISS 951/Anzio serum Italy 2017
 0.12
--230
-549
-0.0
-76
->OK573298.1 UNVERIFIED: Zika virus FDA:FDAARGOS_976 genomic sequence
+35
+99
+0.00
+96
+>OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
+0.15
+31
+113
+0.00
+96
+>JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
 0.13
--270
-594
-0.0
-76
+35
+105
+0.00
+96
+>AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
+0.09
+16
+101
+0.00
+96
+>L06826.1 Epstein-Barr virus DNA polymerase mRNA
+0.09
+17
+133
+0.00
+96
+>LT964969.1 Chikungunya virus partial viral cRNA for glicoprotein (E1 gene), strain chikungunya virus, isolate ISS 951/Anzio serum Italy 2017
+0.10
+25
+140
+0.00
+96
+>OK573298.1 UNVERIFIED: Zika virus FDA:FDAARGOS_976 genomic sequence
+0.08
+22
+112
+0.00
+96
 >M24357.1 Herpes simplex virus type 1 immediate-early protein Vmw68 gene and tandem repeat DNA, 5' end
-0.22
--336
-579
-0.0
-76
+0.09
+7
+34
+0.00
+96

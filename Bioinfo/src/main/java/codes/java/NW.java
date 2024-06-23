@@ -1,9 +1,7 @@
 package codes.java;
-
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
-
 public class NW {
     public static int score(char char1, char char2) {
         return char1 == char2 ? 1 : -1;
@@ -68,12 +66,13 @@ public class NW {
         long endTime = System.currentTimeMillis();
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         DecimalFormat df = new DecimalFormat("0.00", symbols);
-        //*Percent:*/System.out.println(Math.round(((100.0 * countOccurrences(barrinha, '|')) / barrinha.length()) * 100.0) / 100.0);
-        /*Time:   */System.out.println(df.format((endTime - startTime) / 1000.0));
-        /*Score:  */System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
-        /*Gaps:   */System.out.println(countChar(barrinha.toString(), '-'));
-        /*EValue: */System.out.println("0.0");
-        /*Linhas: */System.out.println("61");
+        System.out.println(df.format((endTime - startTime) / 1000.0));
+        System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
+        System.out.println(countChar(barrinha.toString(), '-'));
+        double lambda = 9.162242926908048;
+        double eValue = calculateEValue(scoreMatrix[seq1.length()][seq2.length()], seq1.length(), seq2.length(), lambda);
+        System.out.println(df.format(eValue));
+        System.out.println("122");
     }
     public static int countChar(String str, char ch) {
         int count = 0;
@@ -84,7 +83,6 @@ public class NW {
         }
         return count;
     }
-
     public static int countOccurrences(StringBuilder sb, char c) {
         int count = 0;
         for (int i = 0; i < sb.length(); i++) {
@@ -94,9 +92,13 @@ public class NW {
         }
         return count;
     }
+    public static double calculateEValue(int score, int m, int n, double lambda) {
+        double K = 0.1; // Constante dependente do sistema de pontuação
+        return K * m * n * Math.exp(-lambda * score);
+    }
     public static void main(String[] args) {
         String seq1 = args[0];
-        String seq2 = "TTTCGGCGAATTGAGAGAAATTAGATGCGGTTTGTGTCTGAACCTTTTATCCTAGCGACGATTTTTTAAGGAAGTTGAATATGATCATCAAACCTAAAATTCGTGGATTTATCTGTACAACAACGCACCCAGTGGGTTGTGAAGCGAACGTAAAAGAACAAATTGCCTACACAAAAGCACAAGGTCCGATCAAAAACGCACCTAAGCGCGTGTTGGTTGTCGGATCGTCTAGCGGCTATGGTCTGTCATCACGCATCGCTGCGGCGTTTGGCGGTGGTGCGGCGACGATCGGCGTATTTTTCGAAAAGCCGGGCACTGACAAAAAACCAGGTACTGCGGGTTTCTACAATGCAGCAGCGTTTGACAAGCTAGCGCATGAAGCGGGCTTGTACGCAAAAAGCCTGAACGGCGATGCGTTCTCGAACGAAGCGAAGCAAAAAGCGATTGAGCTGATTAAGCAAGACCTCGGCCAGATTGATTTGGTGGTTTACTCATTGGCTTCTCCAGTGCGTAAAATGCCAGACACGGGTGAGCTAGTGCGCTCTGCACTAAAACCGATCGGCGAAACGTACACCTCTACCGCGGTAGATACCAATAAAGATGTGATCATTGAAGCCAGTGTTGAACCTGCGACCGAGCAAGAAATCGCTGACACTGTCACCGTGATGGGCGGTCAAGATTGGGAACTGTGGATCCAAGCACTGGAAGAGGCGGGTGTTCTTGCTGAAGGTTGCAAAACCGTGGCGTACAGCTACATCGGTACTGAATTGACTTGGCCAATCTACTGGGATGGCGCTTTAGGCCGTGCCAAGATGGACCTAGATCGCGCAGCGACAGCGCTGAACGAAAAGCTGGCAGCGAAAGGTGGTACCGCGAACGTTGCAGTTTTGAAATCAGTGGTGACTCAAGCAAGCTCTGCGATTCCTGTGATGCCGCTCTACATCGCGATGGTGTTCAAGAAGATGCGTGAACAGGGCGTGCATGAAGGCTGTATGGAGCAGATCTACCGCATGTTCAGTCAACGTCTGTACAAAGAAGATGGTTCAGCGCCGGAAGTGGATGATCACAATCGTCTGCGTTTGGATGACTGGGAACTGCGTGATGACATTCAGCAGCACTGCCGTGATCTGTGGCCACAAATCACTACAGAGAACCTGCGTGAGCTGACCGATTACGACATGTACAAAGAAGAGTTCATCAAGCTGTTTGGCTTTGGCATTGAAGGCATTGATTACGATGCTGACGTCAATCCAGAAGTCGAATTCGATGTGATTGATATCGAGTAAGAGAATTAACTCTTATCTTAAAAAGGCGCGTTATCGCGCCTTTTTTGTGTCCGGAGTACAGCATGAATACAGCAGGTTGC";
+        String seq2 = args[1];
         needlemanWunschReconstruct(seq1, seq2, 1, -1, -1);
     }
 }

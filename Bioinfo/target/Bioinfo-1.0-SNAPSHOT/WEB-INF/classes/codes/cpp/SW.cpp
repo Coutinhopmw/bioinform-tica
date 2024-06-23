@@ -3,12 +3,10 @@
 #include <string>
 #include <algorithm>
 #include <chrono>
-#include <cmath> // Para exp
-#include <iomanip> // Para setprecision
-
+#include <cmath>
+#include <iomanip>
 using namespace std;
 using namespace std::chrono;
-
 struct Result {
     string v_aligned;
     string w_aligned;
@@ -16,99 +14,86 @@ struct Result {
     int gap_count;
     double e_value;
     double execution_time;
-    double percent;
 };
-
-Result needleman_wunsch(const string& v, const string& w, int match_score = 1, int mismatch_score = -1, int gap_penalty = -1) {
+Result smith_waterman(const string& seq1, const string& seq2, int match = 1, int mismatch = -1, int gap = -1) {
     auto start = high_resolution_clock::now(); // Início da medição do tempo
-
-    int m = v.size();
-    int n = w.size();
+    int m = seq1.length();
+    int n = seq2.length();
     vector<vector<int>> score_matrix(m + 1, vector<int>(n + 1, 0));
-    vector<vector<int>> direction_matrix(m + 1, vector<int>(n + 1, 0));
-
-    for (int i = 1; i <= m; ++i) {
-        score_matrix[i][0] = i * gap_penalty;
-        direction_matrix[i][0] = 1; // Acima
-    }
-
-    for (int j = 1; j <= n; ++j) {
-        score_matrix[0][j] = j * gap_penalty;
-        direction_matrix[0][j] = 2; // Esquerda
-    }
+    vector<vector<int>> traceback_matrix(m + 1, vector<int>(n + 1, 0));
+    int max_score = 0;
+    pair<int, int> max_pos = {0, 0};
     for (int i = 1; i <= m; ++i) {
         for (int j = 1; j <= n; ++j) {
-            int match = score_matrix[i - 1][j - 1] + (v[i - 1] == w[j - 1] ? match_score : mismatch_score);
-            int delete_score = score_matrix[i - 1][j] + gap_penalty;
-            int insert_score = score_matrix[i][j - 1] + gap_penalty;
-            score_matrix[i][j] = max({match, delete_score, insert_score});
-
-            if (score_matrix[i][j] == match) {
-                direction_matrix[i][j] = 3; // Diagonal
+            int match_score = score_matrix[i - 1][j - 1] + (seq1[i - 1] == seq2[j - 1] ? match : mismatch);
+            int delete_score = score_matrix[i - 1][j] + gap;
+            int insert_score = score_matrix[i][j - 1] + gap;
+            score_matrix[i][j] = max({0, match_score, delete_score, insert_score});
+            if (score_matrix[i][j] == match_score) {
+                traceback_matrix[i][j] = 1; // Diagonal
             } else if (score_matrix[i][j] == delete_score) {
-                direction_matrix[i][j] = 1; // Acima
-            } else {
-                direction_matrix[i][j] = 2; // Esquerda
+                traceback_matrix[i][j] = 2; // Up
+            } else if (score_matrix[i][j] == insert_score) {
+                traceback_matrix[i][j] = 3; // Left
+            }
+
+            if (score_matrix[i][j] > max_score) {
+                max_score = score_matrix[i][j];
+                max_pos = {i, j};
             }
         }
     }
-
-    string v_aligned, w_aligned, barrinha;
-    int i = m, j = n;
+    string aligned_seq1, aligned_seq2,barrinha;
+    int i = max_pos.first;
+    int j = max_pos.second;
     int gap_count = 0;
-
-    while (i > 0 || j > 0) {
-        if (direction_matrix[i][j] == 3) {
-            v_aligned = v[i - 1] + v_aligned;
-            w_aligned = w[j - 1] + w_aligned;
-            --i;
-            --j;
-            if (v[i] == w[j]) {
-                barrinha = '|' + barrinha;
+    while (i > 0 && j > 0 && score_matrix[i][j] != 0) {
+        if (traceback_matrix[i][j] == 1) {
+            aligned_seq1.push_back(seq1[i - 1]);
+            aligned_seq2.push_back(seq2[j - 1]);
+            if (seq1[i - 1] == seq2[j - 1]) {
+                barrinha.push_back('|');
             } else {
-                barrinha = ':' + barrinha;
+                barrinha.push_back(':');
             }
-        } else if (direction_matrix[i][j] == 1) {
-            v_aligned = v[i - 1] + v_aligned;
-            w_aligned = '-' + w_aligned;
             --i;
-            gap_count++;
-            barrinha = '-' + barrinha;
-        } else {
-            v_aligned = '-' + v_aligned;
-            w_aligned = w[j - 1] + w_aligned;
             --j;
-            gap_count++;
-            barrinha = '-' + barrinha;
+        } else if (traceback_matrix[i][j] == 2) {
+            aligned_seq1.push_back(seq1[i - 1]);
+            aligned_seq2.push_back('-');
+            barrinha.push_back('-');
+            --i;
+            ++gap_count;
+        } else if (traceback_matrix[i][j] == 3) {
+            aligned_seq1.push_back('-');
+            aligned_seq2.push_back(seq2[j - 1]);
+            barrinha.push_back('-');
+            --j;
+            ++gap_count;
         }
     }
-
-    double percent = (100.0 * count(barrinha.begin(), barrinha.end(), '|')) / barrinha.length();
+    reverse(aligned_seq1.begin(), aligned_seq1.end());
+    reverse(aligned_seq2.begin(), aligned_seq2.end());
+    reverse(barrinha.begin(), barrinha.end());
     auto stop = high_resolution_clock::now(); // Fim da medição do tempo
     auto duration = duration_cast<microseconds>(stop - start);
-    double K = 0.1, lambda = 0.1;
+    double K = 0.1; // Constante K
+    double lambda = 9.162242926908048; // Valor de lambda
     double e_value = K * m * n * exp(-lambda * score_matrix[m][n]);
-
-    return {v_aligned, w_aligned, score_matrix[m][n], gap_count, e_value, duration.count() / 1e6, percent};
+    return {aligned_seq1, aligned_seq2, score_matrix[m][n], gap_count, e_value, duration.count() / 1e6};
 }
-
+double calculate_evalue(int score, int m, int n, double lambda) {
+    double K = 0.1; // Constante dependente do sistema de pontuação
+    return K * m * n * exp(-lambda * score);
+}
 int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        cerr << "Usage: " << argv[0] << " <string_v>" << endl;
-        return 1;
-    }
-
     string v = argv[1];
     string w = argv[2];
-
-    Result result = needleman_wunsch(v, w);
-
-    //*"Percent"*/cout << fixed << setprecision(2) << result.percent << endl;
-    /*"Time   "*/cout << fixed << setprecision(2) << result.execution_time  << endl;
-    /*"Score  "*/cout << result.score << endl;
-    /*"Gaps:  "*/cout << result.gap_count << endl;
-    /*"EValue:"*/cout << "0.0" /*<< fixed << setprecision(5) << result.e_value */<< endl;
-    /*"Linhas:"*/cout << "76" << endl;
-
+    Result result = smith_waterman(v, w);
+    cout << fixed << setprecision(2) << result.execution_time  << endl;
+    cout << result.score << endl;
+    cout << result.gap_count << endl;
+    cout << fixed << setprecision(2) << result.e_value<< endl; // E-value
+    cout << "96" << endl;
     return 0;
 }

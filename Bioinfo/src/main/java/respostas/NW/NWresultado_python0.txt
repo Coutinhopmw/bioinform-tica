@@ -1,0 +1,110 @@
+>MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
+1.18
+-227
+544
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
+1.27
+-215
+567
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
+1.08
+-240
+574
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
+0.88
+-267
+595
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
+1.23
+-223
+553
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
+0.95
+-283
+610
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>L06826.1 Epstein-Barr virus DNA polymerase mRNA
+0.94
+-250
+553
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>LT964969.1 Chikungunya virus partial viral cRNA for glicoprotein (E1 gene), strain chikungunya virus, isolate ISS 951/Anzio serum Italy 2017
+1.06
+-230
+549
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>OK573298.1 UNVERIFIED: Zika virus FDA:FDAARGOS_976 genomic sequence
+0.44
+-270
+594
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 65, in needleman_wunsch_reconstruct
+    print(round(evalue),2)
+          ^^^^^^^^^^^^^
+OverflowError: cannot convert float infinity to integer
+>M24357.1 Herpes simplex virus type 1 immediate-early protein Vmw68 gene and tandem repeat DNA, 5' end
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 61, in needleman_wunsch_reconstruct
+    evalue = calculate_evalue(alignment_score, len(seq1), len(seq2), lambda_value)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 11, in calculate_evalue
+    return K * m * n * math.exp(-lambda_value * (score/4))*math.exp(-lambda_value * (score/4))* math.exp(-lambda_value * (score/4))*math.exp(-lambda_value * (score/4))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OverflowError: math range error
