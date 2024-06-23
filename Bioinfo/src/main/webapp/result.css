@@ -15,7 +15,8 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px; /* Defina a largura máxima da div conforme necessário */
+    max-width: 600px; /* Aumentei a largura máxima */
+    min-width: 600px; 
     margin: auto; /* Centraliza a div na página */
 }
 
@@ -34,7 +35,13 @@ body, html {
     box-sizing: border-box;
 }
 
-.container input[type="submit"] {
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
     padding: 10px 20px;
     margin: 5px;
     border: none;
@@ -44,6 +51,6 @@ body, html {
     border-radius: 5px;
 }
 
-.container input[type="submit"]:hover {
+.button-container button:hover {
     background-color: #0056b3;
 }

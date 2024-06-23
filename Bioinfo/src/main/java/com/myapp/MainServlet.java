@@ -9,9 +9,11 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainServlet extends HttpServlet {
     private ArrayList<String> seqList = new ArrayList<>();
@@ -32,33 +34,61 @@ public class MainServlet extends HttpServlet {
             // Deleta todos os arquivos de uma pasta específica
             deleteFilesInFolder();
             
-            // Inicia os threads conforme o seu código original
-            for(int i = 0; i < seqList.size(); i++) {
+            // Lista para armazenar as threads
+            List<Thread> threads = new ArrayList<>();
+            
+            // Inicia as threads conforme o seu código original
+            for (int i = 0; i < seqList.size(); i++) {
                 Thread pythonNW = new Thread(new ExecutePythonScript(i, seqList.get(i), "NW"));
                 Thread pythonSW = new Thread(new ExecutePythonScript(i, seqList.get(i), "SW"));
-                pythonNW.start();
-                pythonSW.start();
+                threads.add(pythonNW);
+                threads.add(pythonSW);
                 
                 Thread javaNW = new Thread(new ExecuteJavaProgram(i, seqList.get(i), "NW"));
                 Thread javaSW = new Thread(new ExecuteJavaProgram(i, seqList.get(i), "SW"));
-                javaNW.start();
-                javaSW.start();
+                threads.add(javaNW);
+                threads.add(javaSW);
                 
                 Thread cppNW = new Thread(new ExecuteCppProgram(i, seqList.get(i), "NW"));
                 Thread cppSW = new Thread(new ExecuteCppProgram(i, seqList.get(i), "SW"));
-                cppNW.start();
-                cppSW.start();
+                threads.add(cppNW);
+                threads.add(cppSW);
                 
                 Thread phpNW = new Thread(new ExecutePhpProgram(i, seqList.get(i), "NW"));
                 Thread phpSW = new Thread(new ExecutePhpProgram(i, seqList.get(i), "SW"));
-                phpNW.start();
-                phpSW.start();
+                threads.add(phpNW);
+                threads.add(phpSW);
             }
+
+            // Inicia todas as threads
+            for (Thread thread : threads) {
+                thread.start();
+            }
+
+            // Verifica se as threads ainda estão em execução
+            boolean anyThreadRunning;
+            do {
+                anyThreadRunning = false;
+                for (Thread thread : threads) {
+                    if (thread.isAlive()) {
+                        anyThreadRunning = true;
+                        break;
+                    }
+                }
+                if (anyThreadRunning) {
+                    try {
+                        // Aguarda um pouco antes de verificar novamente
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            } while (anyThreadRunning);
             
             response.sendRedirect(request.getContextPath() + "/result.jsp");
         }
     }
-    
+
     // Método para deletar todos os arquivos de uma pasta
     private void deleteFilesInFolder() {
         // File NW = new File("/Bioinfo/main/java/respostas/NW/");
@@ -91,7 +121,7 @@ public class MainServlet extends HttpServlet {
         
         if (files != null) {
             for (File file : files) {
-                if (file.isFile()&& file.getName().endsWith(".class")) {
+                if (file.isFile() && file.getName().endsWith(".class")) {
                     file.delete();
                 }
             }
