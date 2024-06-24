@@ -1,6 +1,7 @@
 package com.myapp;
 
 import com.myapp.threads.ExecuteCppProgram;
+import com.myapp.threads.ExecuteCsProgram;
 import com.myapp.threads.ExecuteJavaProgram;
 import com.myapp.threads.ExecutePhpProgram;
 import com.myapp.threads.ExecutePythonScript;
@@ -53,6 +54,11 @@ public class MainServlet extends HttpServlet {
                 Thread cppSW = new Thread(new ExecuteCppProgram(i, seqList.get(i), "SW"));
                 threads.add(cppNW);
                 threads.add(cppSW);
+                
+                Thread csNW = new Thread(new ExecuteCsProgram(i, seqList.get(i), "NW"));
+                Thread csSW = new Thread(new ExecuteCsProgram(i, seqList.get(i), "SW"));
+                threads.add(csNW);
+                threads.add(csSW);
                 
                 Thread phpNW = new Thread(new ExecutePhpProgram(i, seqList.get(i), "NW"));
                 Thread phpSW = new Thread(new ExecutePhpProgram(i, seqList.get(i), "SW"));
