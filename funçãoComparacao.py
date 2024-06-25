@@ -31,6 +31,7 @@ def comparacaoScore(resultado_c_plus, resultado_c_sharp, resultado_c, resultado_
     ]
 
     nomesLinguagens = os.listdir(arquivo)
+    nomesLinguagens.sort()
 
     i = 0
     melhorLinguagemScore = None
