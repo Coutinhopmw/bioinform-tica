@@ -1,0 +1,10 @@
+Comparações NW: 
+('resultado_c.txt', 50)
+('resultado_c.txt', 450)
+('resultado_java.txt', 2)
+('resultado_java.txt', 11)
+Comparações SW: 
+('resultado_c_plus_SW.txt', 3000)
+('resultado_php_SW.txt', 800)
+('resultado_c_plus_SW.txt', 6)
+('resultado_c_plus_SW.txt', 251)
