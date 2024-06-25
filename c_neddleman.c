@@ -69,7 +69,7 @@ void nwa(char* seq1, char* seq2){
   int lin = strlen(seq2);
   int gaps = 0;
   int score = mat[lin][col];
-  while(col != 0 || lin != 0){
+  while(col != 0 | lin != 0){
     if(mat_dir[lin][col] == 2){
       col--;
       gaps++;
