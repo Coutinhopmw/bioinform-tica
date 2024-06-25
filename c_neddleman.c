@@ -25,12 +25,12 @@ void nwa(char* seq1, char* seq2){
   
   for (int i = 0; i <=strlen(seq1)+1; i++) {
     mat[i][0] = i*GAP;
-    mat_dir[i][0] = 1;
+    mat_dir[i][0] = 0;
   }
   
   for(int i = 1; i <=strlen(seq2)+1; i++){
     mat[0][i] = i*GAP;
-    mat_dir[0][i] = 2;
+    mat_dir[0][i] = 0;
   }
   //PREENCHIMENTO DA MATRIZ
   for(int i = 1; i<=strlen(seq1); i++){
