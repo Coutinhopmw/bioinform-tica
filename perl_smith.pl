@@ -78,7 +78,7 @@ sub nwa {
   print "\ntem_de_exec: ", $end - $start;
   print "\nscore: ", $score;
   print "\ngaps: ", $gaps;
-  print "\nlin_de_cod: 79\n";
+  print "\nlin_de_cod: 80\n";
 }
 
 nwa("AGACTAGTTAC", "CGAGACGT");
