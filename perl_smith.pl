@@ -63,10 +63,10 @@ sub nwa {
   my $gaps = 0;
   my $score = $mat[$greater_i][$greater_j];
   while($mat[$greater_i][$greater_j] != 0){
-    if($mat_dir[$greater_i][$greater_j] == 2){
+    if($mat_dir[$greater_i][$greater_j] == 1){
       $greater_j = $greater_j - 1;
       $gaps = $gaps + 1;
-    }elsif($mat_dir[$greater_i][$greater_j] == 1){
+    }elsif($mat_dir[$greater_i][$greater_j] == 2){
       $greater_i = $greater_i - 1;
       $gaps = $gaps + 1;
     }else{
