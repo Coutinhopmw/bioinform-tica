@@ -1,0 +1,20 @@
+>MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
+0,06
+44
+100
+0,00
+100
+>KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
+0,17
+50
+148
+0,00
+100
+>PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
+0,14
+41
+99
+0,00
+100
+>OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
+0,05

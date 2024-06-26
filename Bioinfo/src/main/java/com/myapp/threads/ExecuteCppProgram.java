@@ -18,18 +18,18 @@ public class ExecuteCppProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.cppFileName = cppFileName;
-        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
 
         // Define o caminho do arquivo C++ com base no nome do arquivo
         if ("NW".equals(cppFileName)) {
             // Se não estiver usando dockerlembre de atulizar seu caminho:
-            cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/NW.cpp";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_c_plus" + count + ".txt";
+            cppFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/NW.cpp";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_c_plus.txt";
         
         } else if ("SW".equals(cppFileName)) {
             // Se não estiver usando docker lembre de atulizar seu caminho:
-            cppFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/SW.cpp";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_c_plus" + count + ".txt";
+            cppFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp/SW.cpp";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_c_plus_SW.txt";
         }
     }
 
@@ -38,7 +38,7 @@ public class ExecuteCppProgram implements Runnable {
         try {
             // Diretório de saída para o arquivo executável
             // Se não estiver usando docker lembre de atulizar seu caminho:
-            String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp";
+            String outputDir = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp";
             String exeFilePath = outputDir + "/" + cppFileName + "_executable" + count + ".exe";
 
             // Compila o arquivo C++

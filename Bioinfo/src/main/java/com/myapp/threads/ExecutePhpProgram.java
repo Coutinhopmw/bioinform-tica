@@ -18,15 +18,15 @@ public class ExecutePhpProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.phpFileName = phpFileName;
-        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
 
         // Define o caminho do arquivo PHP com base no nome do arquivo
         if ("NW".equals(phpFileName)) {
-            phpFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/php/NW.php";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_php" + count + ".txt";
+            phpFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/php/NW.php";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_php.txt";
         } else if ("SW".equals(phpFileName)) {
-            phpFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/php/SW.php";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_php" + count + ".txt";
+            phpFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/php/SW.php";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_php_SW.txt";
         }    
     }
 

@@ -4,7 +4,8 @@
         "ostream": "cpp",
         "chrono": "cpp",
         "iomanip": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "string.h": "c"
     },
     "java.configuration.updateBuildConfiguration": "interactive"
 }

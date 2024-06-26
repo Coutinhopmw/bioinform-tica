@@ -1,8 +1,11 @@
 package com.myapp;
 
+import com.myapp.threads.ExecuteCProgram;
 import com.myapp.threads.ExecuteCppProgram;
 import com.myapp.threads.ExecuteCsProgram;
 import com.myapp.threads.ExecuteJavaProgram;
+import com.myapp.threads.ExecuteMainPython;
+import com.myapp.threads.ExecutePerlProgram;
 import com.myapp.threads.ExecutePhpProgram;
 import com.myapp.threads.ExecutePythonScript;
 import jakarta.servlet.ServletException;
@@ -40,6 +43,12 @@ public class MainServlet extends HttpServlet {
             
             // Inicia as threads conforme o seu código original
             for (int i = 0; i < seqList.size(); i++) {
+
+                Thread perlNW = new Thread(new ExecutePerlProgram(i, seqList.get(i), "NW"));
+                Thread perlSW = new Thread(new ExecutePerlProgram(i, seqList.get(i), "SW"));
+                threads.add(perlNW);
+                threads.add(perlSW);
+
                 Thread pythonNW = new Thread(new ExecutePythonScript(i, seqList.get(i), "NW"));
                 Thread pythonSW = new Thread(new ExecutePythonScript(i, seqList.get(i), "SW"));
                 threads.add(pythonNW);
@@ -59,11 +68,18 @@ public class MainServlet extends HttpServlet {
                 Thread csSW = new Thread(new ExecuteCsProgram(i, seqList.get(i), "SW"));
                 threads.add(csNW);
                 threads.add(csSW);
+
+                Thread cNW = new Thread(new ExecuteCProgram(i, seqList.get(i), "NW"));
+                Thread cSW = new Thread(new ExecuteCProgram(i, seqList.get(i), "SW"));
+                threads.add(cNW);
+                threads.add(cSW);
                 
                 Thread phpNW = new Thread(new ExecutePhpProgram(i, seqList.get(i), "NW"));
                 Thread phpSW = new Thread(new ExecutePhpProgram(i, seqList.get(i), "SW"));
                 threads.add(phpNW);
                 threads.add(phpSW);
+
+                break;
             }
 
             // Inicia todas as threads
@@ -90,15 +106,15 @@ public class MainServlet extends HttpServlet {
                     }
                 }
             } while (anyThreadRunning);
-            
+            Thread main = new Thread(new ExecuteMainPython());
+            main.start();
             response.sendRedirect(request.getContextPath() + "/result.jsp");
         }
     }
 
     // Método para deletar todos os arquivos de uma pasta
     private void deleteFilesInFolder() {
-        // File NW = new File("/Bioinfo/main/java/respostas/NW/");
-        File NW = new File("C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW");
+        File NW = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW");
         File[] files = NW.listFiles();
         
         if (files != null) {
@@ -108,9 +124,7 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-
-        // File SW = new File("/Bioinfo/main/java/respostas/SW/");
-        File SW = new File("C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW");
+        File SW = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW");
         files = SW.listFiles();
         
         if (files != null) {
@@ -120,9 +134,7 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-
-        // File javaClass = new File("/Bioinfo/target/classes/codes/java");
-        File javaClass = new File("C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java");
+        File javaClass = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java");
         files = javaClass.listFiles();
         
         if (files != null) {
@@ -132,10 +144,18 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-
-        // File cppClass = new File("/Bioinfo/main/java/codes/cpp");
-        File cppClass = new File("C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp");
+        File cppClass = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp");
         files = cppClass.listFiles();
+        
+        if (files != null ) {
+            for (File file : files) {
+                if (file.isFile() && file.getName().endsWith(".exe")) {
+                    file.delete();
+                }
+            }
+        }
+        File cClass = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/c");
+        files = cClass.listFiles();
         
         if (files != null ) {
             for (File file : files) {

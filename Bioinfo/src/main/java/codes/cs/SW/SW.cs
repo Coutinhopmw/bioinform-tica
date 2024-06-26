@@ -1,13 +1,7 @@
-using System;
 using System.Diagnostics;
-using System.IO;
 public class SWResult{
-    public string aligned_seq1 { get; set; }
-    public string aligned_seq2 { get; set; }
     public int max_score { get; set; }
-    public string barrinha { get; set; }
     public int gap_count { get; set; }
-    public double e_value { get; set; }
     public double execution_time { get; set; }
 }
 public class SW{
@@ -41,60 +35,39 @@ public class SW{
                 }
             }
         }
-        string aligned_seq1 = "", aligned_seq2 = "", barrinha = "";
         int ii = max_pos.Item1;
         int jj = max_pos.Item2;
         int gap_count = 0;
         while (score_matrix[ii, jj] != 0){
             if (traceback_matrix[ii, jj] == 1){
-                aligned_seq1 = seq1[ii - 1] + aligned_seq1;
-                aligned_seq2 = seq2[jj - 1] + aligned_seq2;
-                if (seq1[ii - 1] == seq2[jj - 1]){
-                    barrinha = '|' + barrinha;
-                }
-                else{
-                    barrinha = ':' + barrinha;
-                }
                 --ii;
                 --jj;
             }
             else if (traceback_matrix[ii, jj] == 2){
-                aligned_seq1 = seq1[ii - 1] + aligned_seq1;
-                aligned_seq2 = '-' + aligned_seq2;
-                barrinha = '-' + barrinha;
                 --ii;
                 gap_count++;
             }
             else if (traceback_matrix[ii, jj] == 3){
-                aligned_seq2 = seq2[jj - 1] + aligned_seq2;
-                aligned_seq1 = '-' + aligned_seq1;
-                barrinha = '-' + barrinha;
                 --jj;
                 gap_count++;
             }
         }
         stopwatch.Stop(); // Fim da medição do tempo
         var duration = stopwatch.Elapsed.TotalSeconds;
-        double K = 0.1, lambda = 9.162242926908048;
-        double e_value = K * m * n * Math.Exp(-lambda * max_score);
         return new SWResult{
-            aligned_seq1 = aligned_seq1,
-            aligned_seq2 = aligned_seq2,
-            max_score = max_score,
-            barrinha = barrinha,
             gap_count = gap_count,
-            e_value = e_value,
-            execution_time = duration
+            execution_time = duration,
+            max_score = max_score
         };
     }
     public static void Main(string[] args){
         string seq1 = args[0];
         string seq2 = args[1];
         SWResult result = SmithWaterman(seq1, seq2);
-        Console.WriteLine(result.execution_time.ToString("F2"));
+        // Usando o CultureInfo.InvariantCulture para garantir que o ponto decimal seja usado
+        Console.WriteLine(result.execution_time.ToString("F2", System.Globalization.CultureInfo.InvariantCulture));
         Console.WriteLine(result.max_score);
         Console.WriteLine(result.gap_count);
-        Console.WriteLine(result.e_value.ToString("F2"));
-        Console.WriteLine("100");
+        Console.WriteLine("56");
     }
 }

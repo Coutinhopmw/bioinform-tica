@@ -1,0 +1,65 @@
+>MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
+1.67
+-227
+544
+inf
+70
+>KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
+4.64
+-215
+567
+inf
+70
+>PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
+1.09
+-240
+574
+inf
+70
+>OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
+2.09
+-267
+595
+inf
+70
+>JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
+2.49
+-223
+553
+inf
+70
+>AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
+2.49
+-283
+610
+inf
+70
+>L06826.1 Epstein-Barr virus DNA polymerase mRNA
+3.25
+-250
+553
+inf
+70
+>LT964969.1 Chikungunya virus partial viral cRNA for glicoprotein (E1 gene), strain chikungunya virus, isolate ISS 951/Anzio serum Italy 2017
+1.85
+-230
+549
+inf
+70
+>OK573298.1 UNVERIFIED: Zika virus FDA:FDAARGOS_976 genomic sequence
+1.85
+-270
+594
+inf
+70
+>M24357.1 Herpes simplex virus type 1 immediate-early protein Vmw68 gene and tandem repeat DNA, 5' end
+Traceback (most recent call last):
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 70, in <module>
+    needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1, lambda_value)
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 61, in needleman_wunsch_reconstruct
+    evalue = calculate_evalue(alignment_score, len(seq1), len(seq2), lambda_value)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usu�rio\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\python\NW.py", line 11, in calculate_evalue
+    return K * m * n * math.exp(-lambda_value * (score/4))*math.exp(-lambda_value * (score/4))* math.exp(-lambda_value * (score/4))*math.exp(-lambda_value * (score/4))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OverflowError: math range error

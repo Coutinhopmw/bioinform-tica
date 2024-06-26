@@ -8,11 +8,8 @@
 using namespace std;
 using namespace std::chrono;
 struct Result {
-    string v_aligned;
-    string w_aligned;
     int score;
     int gap_count;
-    double e_value;
     double execution_time;
 };
 Result needleman_wunsch(const string& v, const string& w, int match_score = 1, int mismatch_score = -1, int gap_penalty = -1) {
@@ -49,35 +46,19 @@ Result needleman_wunsch(const string& v, const string& w, int match_score = 1, i
     int gap_count = 0;
     while (i > 0 || j > 0) {
         if (direction_matrix[i][j] == 3) {
-            v_aligned = v[i - 1] + v_aligned;
-            w_aligned = w[j - 1] + w_aligned;
             --i;
             --j;
-            if (v[i] == w[j]) {
-                barrinha = '|' + barrinha;
-            } else {
-                barrinha = ':' + barrinha;
-            }
         } else if (direction_matrix[i][j] == 1) {
-            v_aligned = v[i - 1] + v_aligned;
-            w_aligned = '-' + w_aligned;
             --i;
             gap_count++;
-            barrinha = '-' + barrinha;
         } else {
-            v_aligned = '-' + v_aligned;
-            w_aligned = w[j - 1] + w_aligned;
             --j;
             gap_count++;
-            barrinha = '-' + barrinha;
         }
     }
     auto stop = high_resolution_clock::now(); // Fim da medição do tempo
     auto duration = duration_cast<microseconds>(stop - start);
-    double K = 0.1; // Constante K
-    double lambda = 9.162242926908048; // Valor de lambda
-    double e_value = K * m * n * exp(-lambda * score_matrix[m][n]);
-    return {v_aligned, w_aligned, score_matrix[m][n], gap_count, e_value, duration.count() / 1e6};
+    return {score_matrix[m][n], gap_count, duration.count() / 1e6};
 }
 int main(int argc, char* argv[]) {
     string v = argv[1];
@@ -86,7 +67,6 @@ int main(int argc, char* argv[]) {
     cout << fixed << setprecision(2) << result.execution_time  << endl;
     cout << result.score << endl;
     cout << result.gap_count << endl;
-    cout << fixed << setprecision(2) << result.e_value << endl;
-    cout << 76 << endl;
+    cout << 49 << endl;
     return 0;
 }

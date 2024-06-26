@@ -21,15 +21,15 @@ public class ExecutePythonScript implements Runnable {
         this.count = count;
         this.seq = seq;
         this.scriptName = scriptName;
-        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
 
         // Define o caminho do script Python com base no nome do script
         if ("NW".equals(scriptName)) {
-            pythonScriptPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/NW.py";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_python" + count + ".txt";
+            pythonScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/NW.py";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_python.txt";
         } else if ("SW".equals(scriptName)) {
-            pythonScriptPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/SW.py";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_python" + count + ".txt";
+            pythonScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/SW.py";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_python_SW.txt";
         }     
     }
 

@@ -24,27 +24,18 @@ public class SW {
                 }
             }
         }
-        StringBuilder alignedSeq1 = new StringBuilder();
-        StringBuilder alignedSeq2 = new StringBuilder();
-        StringBuilder barrinha = new StringBuilder();
         int i = maxPos[0];
         int j = maxPos[1];
+        int gaps = 0;
         while (scoreMatrix[i][j] != 0) {
             if (scoreMatrix[i][j] == scoreMatrix[i - 1][j - 1] + score(seq1.charAt(i - 1), seq2.charAt(j - 1), matchScore, mismatchPenalty)) {
-                alignedSeq1.insert(0, seq1.charAt(i - 1));
-                alignedSeq2.insert(0, seq2.charAt(j - 1));
-                barrinha.insert(0, (seq1.charAt(i - 1) == seq2.charAt(j - 1)) ? '|' : ':');
                 i--;
                 j--;
             } else if (scoreMatrix[i][j] == scoreMatrix[i - 1][j] + gapPenalty) {
-                alignedSeq1.insert(0, seq1.charAt(i - 1));
-                alignedSeq2.insert(0, '-');
-                barrinha.insert(0, '-');
+                gaps++;
                 i--;
             } else {
-                alignedSeq1.insert(0, '-');
-                alignedSeq2.insert(0, seq2.charAt(j - 1));
-                barrinha.insert(0, '-');
+                gaps++;
                 j--;
             }
         }
@@ -52,41 +43,13 @@ public class SW {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         DecimalFormat df = new DecimalFormat("0.00", symbols);
         double executionTime = (endTime - startTime) / 1000.0;
-        int gapCount = countChar(barrinha.toString(), '-');
-        int m = seq1.length();
-        int n = seq2.length();
-        double lambda = 9.162242926908048;
-        double eValue = calculateEValue(maxScore, m, n, lambda);
-        System.out.println("Time:    " + df.format(executionTime));
-        System.out.println("Score:   " + maxScore);
-        System.out.println("Gaps:    " + gapCount);
-        System.out.println("EValue:  " + df.format(eValue));
-        System.out.println("Linhas:  56"); // Ajuste conforme necessário
+        System.out.println(df.format(executionTime));
+        System.out.println(maxScore);
+        System.out.println(gaps);
+        System.out.println("41"); // Ajuste conforme necessário
     }
     public static int score(char char1, char char2, int matchScore, int mismatchPenalty) {
         return (char1 == char2) ? matchScore : mismatchPenalty;
-    }
-    public static int countChar(String str, char ch) {
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == ch) {
-                count++;
-            }
-        }
-        return count;
-    }
-    public static int countOccurrences(StringBuilder sb, char c) {
-        int count = 0;
-        for (int i = 0; i < sb.length(); i++) {
-            if (sb.charAt(i) == c) {
-                count++;
-            }
-        }
-        return count;
-    }
-    public static double calculateEValue(int score, int m, int n, double lambda) {
-        double K = 0.1; // Constante dependente do sistema de pontuação
-        return K * m * n * Math.exp(-lambda * score);
     }
     public static void main(String[] args) {
         String seq1 = args[0];

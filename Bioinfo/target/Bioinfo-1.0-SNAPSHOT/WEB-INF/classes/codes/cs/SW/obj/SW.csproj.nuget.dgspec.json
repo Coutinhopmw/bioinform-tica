@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuário\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\target\\classes\\codes\\cs\\SW\\SW.csproj": {}
+    "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuário\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\target\\classes\\codes\\cs\\SW\\SW.csproj": {
+    "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\target\\classes\\codes\\cs\\SW\\SW.csproj",
+        "projectUniqueName": "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj",
         "projectName": "SW",
-        "projectPath": "C:\\Users\\Usuário\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\target\\classes\\codes\\cs\\SW\\SW.csproj",
-        "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\target\\classes\\codes\\cs\\SW\\obj\\",
+        "projectPath": "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj",
+        "packagesPath": "C:\\Users\\Jess\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jess\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

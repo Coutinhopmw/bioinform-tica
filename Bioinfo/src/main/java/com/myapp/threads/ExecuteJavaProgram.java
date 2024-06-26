@@ -18,7 +18,7 @@ public class ExecuteJavaProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.javaFileName = javaFileName;
-        this.directoryPath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
 
         
         // Define o caminho do arquivo Java com base no nome do arquivo
@@ -27,16 +27,16 @@ public class ExecuteJavaProgram implements Runnable {
             // outputFilePath = "/Bioinfo/main/java/respostas/NW/NWresultado_java" + count + ".txt";
 
             // Se não estiver usando docker:
-            javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/NW.java";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/NWresultado_java" + count + ".txt";
+            javaFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/NW.java";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_java.txt";
         
         } else if ("SW".equals(javaFileName)) {
             // javaFilePath = "/Bioinfo/main/java/codes/java/SW.java";
             // outputFilePath = "/Bioinfo/main/java/respostas/SW/SWresultado_java" + count + ".txt";
 
             // Se não estiver usando docker lembre de atulizar seu caminho:
-            javaFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/SW.java";
-            outputFilePath = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/SWresultado_java" + count + ".txt";
+            javaFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java/SW.java";
+            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_java_SW.txt";
         }
     }
 
@@ -47,7 +47,7 @@ public class ExecuteJavaProgram implements Runnable {
             // String outputDir = "/Bioinfo/target/classes/";
 
             // Se não estiver usando docker lembre de atulizar seu caminho:
-            String outputDir = "C:/Users/Usuário/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/";
+            String outputDir = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/";
 
             if ("NW".equals(javaFileName)) {
                 System.out.println("Java   NW executando o arquivo...");

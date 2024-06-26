@@ -1,60 +1,50 @@
 >MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
-Time:    0.16
-Score:   70
-Gaps:    128
-EValue:  0.00
-Linhas:  56
+0.33
+44
+100
+Linhas:  38
 >KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
-Time:    0.09
-Score:   58
-Gaps:    166
-EValue:  0.00
-Linhas:  56
+0.15
+50
+148
+Linhas:  38
 >PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
-Time:    0.08
-Score:   74
-Gaps:    125
-EValue:  0.00
-Linhas:  56
+0.08
+41
+99
+Linhas:  38
 >OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
-Time:    0.08
-Score:   66
-Gaps:    119
-EValue:  0.00
-Linhas:  56
+0.15
+50
+113
+Linhas:  38
 >JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
-Time:    0.09
-Score:   65
-Gaps:    146
-EValue:  0.00
-Linhas:  56
+0.12
+41
+105
+Linhas:  38
 >AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
-Time:    0.17
-Score:   75
-Gaps:    134
-EValue:  0.00
-Linhas:  56
+0.13
+37
+101
+Linhas:  38
 >L06826.1 Epstein-Barr virus DNA polymerase mRNA
-Time:    0.10
-Score:   62
-Gaps:    119
-EValue:  0.00
-Linhas:  56
+0.13
+36
+133
+Linhas:  38
 >LT964969.1 Chikungunya virus partial viral cRNA for glicoprotein (E1 gene), strain chikungunya virus, isolate ISS 951/Anzio serum Italy 2017
-Time:    0.11
-Score:   64
-Gaps:    156
-EValue:  0.00
-Linhas:  56
+0.11
+40
+140
+Linhas:  38
 >OK573298.1 UNVERIFIED: Zika virus FDA:FDAARGOS_976 genomic sequence
-Time:    0.12
-Score:   48
-Gaps:    128
-EValue:  0.00
-Linhas:  56
+0.07
+38
+112
+Linhas:  38
 >M24357.1 Herpes simplex virus type 1 immediate-early protein Vmw68 gene and tandem repeat DNA, 5' end
-Time:    0.14
-Score:   21
-Gaps:    36
-EValue:  0.00
-Linhas:  56
+0.10
+24
+34
+Linhas:  38

@@ -1,15 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 public class NWResult{
-    public string v_aligned { get; set; }
-    public string w_aligned { get; set; }
-    public string barrinha { get; set; }
     public int score { get; set; }
     public int gap_count { get; set; }
-    public double e_value { get; set; }
     public double execution_time { get; set; }
 }
 public class NW{
@@ -44,48 +36,27 @@ public class NW{
                 }
             }
         }
-        string v_aligned = "", w_aligned = "", barrinha = "";
         int ii = m, jj = n;
         int gap_count = 0;
         while (ii > 0 || jj > 0){
             if (direction_matrix[ii, jj] == 3){
-                v_aligned = v[ii - 1] + v_aligned;
-                w_aligned = w[jj - 1] + w_aligned;
-                if (v[ii - 1] == w[jj - 1]){
-                    barrinha = '|' + barrinha;
-                }
-                else{
-                    barrinha = ':' + barrinha;
-                }
                 --ii;
                 --jj;
             }
             else if (direction_matrix[ii, jj] == 1){
-                v_aligned = v[ii - 1] + v_aligned;
-                w_aligned = '-' + w_aligned;
-                barrinha = '-' + barrinha;
                 --ii;
                 gap_count++;
             }
             else{
-                w_aligned = w[jj - 1] + w_aligned;
-                v_aligned = '-' + v_aligned;
-                barrinha = '-' + barrinha;
                 --jj;
                 gap_count++;
             }
         }
         stopwatch.Stop(); // Fim da medição do tempo
         var duration = stopwatch.Elapsed.TotalSeconds;
-        double K = 0.1, lambda = 9.162242926908048;
-        double e_value = K * m * n * Math.Exp(-lambda * score_matrix[m, n]);
         return new NWResult{
-            v_aligned = v_aligned,
-            w_aligned = w_aligned,
-            barrinha = barrinha,
             score = score_matrix[m, n],
             gap_count = gap_count,
-            e_value = e_value,
             execution_time = duration
         };
     }
@@ -93,10 +64,10 @@ public class NW{
         string seq1 = args[0];
         string seq2 = args[1];
         NWResult result = NeedlemanWunsch(seq1, seq2);
-        Console.WriteLine(result.execution_time.ToString("F2"));
+        // Usando o CultureInfo.InvariantCulture para garantir que o ponto decimal seja usado
+        Console.WriteLine(result.execution_time.ToString("F2", System.Globalization.CultureInfo.InvariantCulture));
         Console.WriteLine(result.score);
         Console.WriteLine(result.gap_count);
-        Console.WriteLine(result.e_value.ToString("F2"));
-        Console.WriteLine("102");
+        Console.WriteLine("57");
     }
 }

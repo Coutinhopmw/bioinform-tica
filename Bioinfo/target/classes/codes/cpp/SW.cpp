@@ -8,11 +8,8 @@
 using namespace std;
 using namespace std::chrono;
 struct Result {
-    string v_aligned;
-    string w_aligned;
     int score;
     int gap_count;
-    double e_value;
     double execution_time;
 };
 Result smith_waterman(const string& seq1, const string& seq2, int match = 1, int mismatch = -1, int gap = -1) {
@@ -36,55 +33,30 @@ Result smith_waterman(const string& seq1, const string& seq2, int match = 1, int
             } else if (score_matrix[i][j] == insert_score) {
                 traceback_matrix[i][j] = 3; // Left
             }
-
             if (score_matrix[i][j] > max_score) {
                 max_score = score_matrix[i][j];
                 max_pos = {i, j};
             }
         }
     }
-    string aligned_seq1, aligned_seq2,barrinha;
     int i = max_pos.first;
     int j = max_pos.second;
     int gap_count = 0;
     while (i > 0 && j > 0 && score_matrix[i][j] != 0) {
         if (traceback_matrix[i][j] == 1) {
-            aligned_seq1.push_back(seq1[i - 1]);
-            aligned_seq2.push_back(seq2[j - 1]);
-            if (seq1[i - 1] == seq2[j - 1]) {
-                barrinha.push_back('|');
-            } else {
-                barrinha.push_back(':');
-            }
             --i;
             --j;
         } else if (traceback_matrix[i][j] == 2) {
-            aligned_seq1.push_back(seq1[i - 1]);
-            aligned_seq2.push_back('-');
-            barrinha.push_back('-');
             --i;
             ++gap_count;
         } else if (traceback_matrix[i][j] == 3) {
-            aligned_seq1.push_back('-');
-            aligned_seq2.push_back(seq2[j - 1]);
-            barrinha.push_back('-');
             --j;
             ++gap_count;
         }
     }
-    reverse(aligned_seq1.begin(), aligned_seq1.end());
-    reverse(aligned_seq2.begin(), aligned_seq2.end());
-    reverse(barrinha.begin(), barrinha.end());
     auto stop = high_resolution_clock::now(); // Fim da medição do tempo
     auto duration = duration_cast<microseconds>(stop - start);
-    double K = 0.1; // Constante K
-    double lambda = 9.162242926908048; // Valor de lambda
-    double e_value = K * m * n * exp(-lambda * score_matrix[m][n]);
-    return {aligned_seq1, aligned_seq2, score_matrix[m][n], gap_count, e_value, duration.count() / 1e6};
-}
-double calculate_evalue(int score, int m, int n, double lambda) {
-    double K = 0.1; // Constante dependente do sistema de pontuação
-    return K * m * n * exp(-lambda * score);
+    return {max_score, gap_count, duration.count() / 1e6};
 }
 int main(int argc, char* argv[]) {
     string v = argv[1];
@@ -93,7 +65,6 @@ int main(int argc, char* argv[]) {
     cout << fixed << setprecision(2) << result.execution_time  << endl;
     cout << result.score << endl;
     cout << result.gap_count << endl;
-    cout << fixed << setprecision(2) << result.e_value<< endl; // E-value
-    cout << "96" << endl;
+    cout << "47" << endl;
     return 0;
 }
