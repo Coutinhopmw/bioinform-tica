@@ -68,13 +68,6 @@ void swa(char* seq1, char* seq2){
       }
     }
   }
-
-  for(int i = 0; i<=strlen(seq1); i++){
-    printf("\n");
-    for(int j = 0; j<=strlen(seq2); j++){
-      printf("%2d ", mat[i][j]);
-    }
-  }
   //ALINHAMENTO
   int col = greater_j;
   int lin = greater_i;
