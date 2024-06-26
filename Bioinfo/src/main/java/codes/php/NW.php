@@ -69,14 +69,9 @@ $score = $result['score'];
 $qtd_gap = $result['gaps'];
 $homology = $result['homo'];
 
-$text = "$time\n$score\n$qtd_gap\n$evalue";
-
-    $arquivo = fopen("resultados_NW_php.txt", "w");
-    if ($arquivo == false){
-        die ('Não foi possível criar o arquivo.');
-    } else{
-        fwrite($arquivo, $text);
-    }
-
+/*Percento:*/echo $homology . "\n";
+/*Time:    */echo $time . "\n";
+/*Score:   */echo $score . "\n";
+/*Gap:     */echo $qtd_gap . "\n";
 
 ?>

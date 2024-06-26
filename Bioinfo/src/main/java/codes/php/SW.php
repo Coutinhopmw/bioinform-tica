@@ -90,13 +90,4 @@ $percent = round(((100.0 * substr_count($barrinha, '|')) / strlen($barrinha)) * 
 /*Score:   */echo $score . "\n";
 /*Gap:     */echo $qtd_gap . "\n";
 
-$text = "$time\n$score\n$qtd_gap\n$evalue";
-
-    $arquivo = fopen("resultados_SW_php.txt", "w");
-    if ($arquivo == false){
-        die ('Não foi possível criar o arquivo.');
-    } else{
-        fwrite($arquivo, $text);
-    }
-
 ?>
