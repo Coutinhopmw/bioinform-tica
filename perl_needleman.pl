@@ -61,10 +61,10 @@ sub nwa {
   my $gaps = 0;
   my $score = $mat[$len_2][$len_1];
   while($len_1 != 0 && $len_2 != 0){
-    if($mat_dir[$len_2][$len_1] == 2){
+    if($mat_dir[$len_2][$len_1] == 1){
       $len_1 = $len_1 - 1;
       $gaps = $gaps + 1;
-    }elsif($mat_dir[$len_2][$len_1] == 1){
+    }elsif($mat_dir[$len_2][$len_1] == 2){
       $len_2 = $len_2 - 1;
       $gaps = $gaps + 1;
     }else{
