@@ -57,13 +57,6 @@ void nwa(char* seq1, char* seq2){
       }
     }
   }
-
-  for(int i = 0; i<=strlen(seq1) + 1; i++){
-    printf("\n");
-    for(int j = 0; j<=strlen(seq2); j++){
-      printf("%2d ", mat_dir[i][j]);
-    }
-  }
   //ALINHAMENTO
   int col = strlen(seq1);
   int lin = strlen(seq2);
