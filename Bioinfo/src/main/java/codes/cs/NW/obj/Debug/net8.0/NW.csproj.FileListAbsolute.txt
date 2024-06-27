@@ -32,7 +32,6 @@ C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\cod
 C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\NW.AssemblyInfoInputs.cache
 C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\NW.AssemblyInfo.cs
 C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\NW.csproj.CoreCompileInputs.cache
-C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\NW.sourcelink.json
 C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\NW.dll
 C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\refint\NW.dll
 C:\Users\Jess\OneDrive\Documentos\NetBeansProjects\BIO\Bioinfo\src\main\java\codes\cs\NW\obj\Debug\net8.0\NW.pdb

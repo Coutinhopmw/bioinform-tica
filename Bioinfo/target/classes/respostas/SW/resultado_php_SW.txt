@@ -1,50 +1,50 @@
 >MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
-0.85
-70
-128
+0.57
+44
+100
 44
 >KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
-1.98
-58
-166
+0.65
+50
+148
 44
 >PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
-0.7
-74
-125
+0.99
+41
+99
 44
 >OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
 0.72
-66
-119
+50
+113
 44
 >JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
-0.78
-65
-146
+1.23
+41
+105
 44
 >AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
-0.79
-75
-134
+0.97
+37
+101
 44
 >L06826.1 Epstein-Barr virus DNA polymerase mRNA
-1.58
-62
-119
+1.53
+36
+133
 44
 >LT964969.1 Chikungunya virus partial viral cRNA for glicoprotein (E1 gene), strain chikungunya virus, isolate ISS 951/Anzio serum Italy 2017
-0.76
-64
-156
+1.6
+40
+140
 44
 >OK573298.1 UNVERIFIED: Zika virus FDA:FDAARGOS_976 genomic sequence
-1.07
-48
-128
+1
+38
+112
 44
 >M24357.1 Herpes simplex virus type 1 immediate-early protein Vmw68 gene and tandem repeat DNA, 5' end
-0.97
-21
-36
+0.7
+24
+34
 44
