@@ -24,6 +24,11 @@ RUN apt-get update && apt-get install -y \
     build-essential \
  && rm -rf /var/lib/apt/lists/*
 
+# Instale o Perl
+RUN apt-get update && apt-get install -y \
+    perl \
+ && rm -rf /var/lib/apt/lists/*
+
 # Exponha a porta em que o Tomcat estará escutando
 EXPOSE 8080
 

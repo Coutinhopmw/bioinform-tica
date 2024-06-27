@@ -4,27 +4,27 @@
 544
 34
 >KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
-0.01
+0.02
 -215
 567
 34
 >PP892863.1 Dengue virus type 1 isolate DENV_E_NIV597 polyprotein, envelope protein E region, (POLY) gene, partial cds
-0.01
+0.07
 -240
 574
 34
 >OK573245.1 UNVERIFIED: Middle East respiratory syndrome-related coronavirus FDA:FDAARGOS_803 genomic sequence
-0.01
+0.02
 -267
 595
 34
 >JY085055.1 HBV0838 HBV genome library Hepatitis B virus genomic clone 14375.3, genomic survey sequence
-0.04
+0.01
 -223
 553
 34
 >AM259427.1 African swine fever virus partial B602L gene, isolate Mw LIL20/1
-0.02
+0.01
 -283
 610
 34
@@ -44,7 +44,7 @@
 594
 34
 >M24357.1 Herpes simplex virus type 1 immediate-early protein Vmw68 gene and tandem repeat DNA, 5' end
-0.02
+0.01
 -336
 579
 34

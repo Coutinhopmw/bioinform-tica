@@ -1,4 +1,0 @@
-tempo de execução
-score
-Qtd gap
-E value

@@ -3,13 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <link rel="stylesheet" href="indexF.css" type="text/css"/>
     <title>Start Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript">
         function handleSubmit(action) {
             if (action === 'resultado') {
                 document.getElementById('seq').disabled = true;
+                document.getElementById('seq').placeholder = "Aguarde enguanto a sequência é processada...";
                 document.getElementById('adicionar').style.display = 'none';
                 document.getElementById('resultado').style.display = 'none';
                 document.getElementById('loading').style.display = 'block';
