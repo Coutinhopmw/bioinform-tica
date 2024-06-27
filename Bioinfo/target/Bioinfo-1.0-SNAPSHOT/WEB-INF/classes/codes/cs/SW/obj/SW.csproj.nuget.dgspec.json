@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj": {}
+    "\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj": {
+    "\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj",
+        "projectUniqueName": "\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj",
         "projectName": "SW",
-        "projectPath": "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj",
-        "packagesPath": "C:\\Users\\Jess\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jess\\OneDrive\\Documentos\\NetBeansProjects\\BIO\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\obj\\",
+        "projectPath": "\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\SW.csproj",
+        "packagesPath": "\\.nuget\\packages\\",
+        "outputPath": "\\Bioinfo\\src\\main\\java\\codes\\cs\\SW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jess\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

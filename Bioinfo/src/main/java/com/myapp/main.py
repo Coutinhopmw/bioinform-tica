@@ -1,12 +1,12 @@
 import funcaoComparacao
 
-f_py      = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_python.txt")
-f_perl    = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_perl.txt")
-f_c       = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_c.txt")
-f_c_plus  = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_c_plus.txt")
-f_c_sharp = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_c_sharp.txt")
-f_java    = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_java.txt")
-f_php     = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_php.txt")
+f_py      = open("/Bioinfo/src/main/java/respostas/NW/resultado_python.txt")
+f_perl    = open("/Bioinfo/src/main/java/respostas/NW/resultado_perl.txt")
+f_c       = open("/Bioinfo/src/main/java/respostas/NW/resultado_c.txt")
+f_c_plus  = open("/Bioinfo/src/main/java/respostas/NW/resultado_c_plus.txt")
+f_c_sharp = open("/Bioinfo/src/main/java/respostas/NW/resultado_c_sharp.txt")
+f_java    = open("/Bioinfo/src/main/java/respostas/NW/resultado_java.txt")
+f_php     = open("/Bioinfo/src/main/java/respostas/NW/resultado_php.txt")
 
 arquivo_python = f_py.read()
 arquivo_perl = f_perl.read()
@@ -16,15 +16,15 @@ arquivo_c_sharp = f_c_sharp.read()
 arquivo_java = f_java.read()
 arquivo_php = f_php.read()
 
-arquivos_NW = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW"
-arquivos_SW = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW"
+arquivos_NW = "/Bioinfo/src/main/java/respostas/NW"
+arquivos_SW = "/Bioinfo/src/main/java/respostas/SW"
 
 Time,lTime = funcaoComparacao.comparacaoTempoExecucao(arquivo_c, arquivo_c_plus, arquivo_c_sharp, arquivo_java,  arquivo_perl, arquivo_php, arquivo_python, arquivos_NW)
 Score,lScore = funcaoComparacao.comparacaoScore(arquivo_c, arquivo_c_plus, arquivo_c_sharp, arquivo_java,  arquivo_perl, arquivo_php, arquivo_python, arquivos_NW)
 Gap,lGAp = funcaoComparacao.comparacaoGap(arquivo_c, arquivo_c_plus, arquivo_c_sharp, arquivo_java,  arquivo_perl, arquivo_php, arquivo_python, arquivos_NW)
 Line,lLine = funcaoComparacao.comparacaoLinhasCodigo(arquivo_c, arquivo_c_plus, arquivo_c_sharp, arquivo_java,  arquivo_perl, arquivo_php, arquivo_python, arquivos_NW)
 
-resultado = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/com/myapp/resultado.txt", "w")
+resultado = open("/Bioinfo/src/main/java/com/myapp/resultado.txt", "w")
 
 # print("Comparacoes NW")
 print(Time)
@@ -50,13 +50,13 @@ f_php.close()
 resultado.close()
 # readResultado.close()
 
-fs_py      = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_python_SW.txt")
-fs_perl    = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_perl_SW.txt")
-fs_c       = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_c_SW.txt")
-fs_c_plus  = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_c_plus_SW.txt")
-fs_c_sharp = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_c_sharp_SW.txt")
-fs_java    = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_java_SW.txt")
-fs_php     = open("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_php_SW.txt")
+fs_py      = open("/Bioinfo/src/main/java/respostas/SW/resultado_python_SW.txt")
+fs_perl    = open("/Bioinfo/src/main/java/respostas/SW/resultado_perl_SW.txt")
+fs_c       = open("/Bioinfo/src/main/java/respostas/SW/resultado_c_SW.txt")
+fs_c_plus  = open("/Bioinfo/src/main/java/respostas/SW/resultado_c_plus_SW.txt")
+fs_c_sharp = open("/Bioinfo/src/main/java/respostas/SW/resultado_c_sharp_SW.txt")
+fs_java    = open("/Bioinfo/src/main/java/respostas/SW/resultado_java_SW.txt")
+fs_php     = open("/Bioinfo/src/main/java/respostas/SW/resultado_php_SW.txt")
 
 arquivo_python = fs_py.read()
 arquivo_perl = fs_perl.read()

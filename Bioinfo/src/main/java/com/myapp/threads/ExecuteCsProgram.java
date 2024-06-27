@@ -18,15 +18,15 @@ public class ExecuteCsProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.csFileName = csFileName;
-        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "/Bioinfo/database";
 
         // Define o caminho do arquivo C# com base no nome do arquivo
         if ("NW".equals(csFileName)) {
-            csFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cs/NW/";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_c_sharp.txt";
+            csFilePath = "/Bioinfo/src/main/java/codes/cs/NW/";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/NW/resultado_c_sharp.txt";
         } else if ("SW".equals(csFileName)) {
-            csFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cs/SW/";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_c_sharp_SW.txt";
+            csFilePath = "/Bioinfo/src/main/java/codes/cs/SW/";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/SW/resultado_c_sharp_SW.txt";
         }
     }
 

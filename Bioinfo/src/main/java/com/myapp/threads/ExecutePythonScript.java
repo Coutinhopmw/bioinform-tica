@@ -15,21 +15,21 @@ public class ExecutePythonScript implements Runnable {
     private String directoryPath;
 
     // Caminho para o executável Python no seu sistema
-    private static final String PYTHON_EXECUTABLE = "python"; // Ajuste conforme o seu ambiente
+    private static final String PYTHON_EXECUTABLE = "python3"; // Ajuste conforme o seu ambiente
 
     public ExecutePythonScript(int count, String seq, String scriptName) {
         this.count = count;
         this.seq = seq;
         this.scriptName = scriptName;
-        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "/Bioinfo/database";
 
         // Define o caminho do script Python com base no nome do script
         if ("NW".equals(scriptName)) {
-            pythonScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/NW.py";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_python.txt";
+            pythonScriptPath = "/Bioinfo/src/main/java/codes/python/NW.py";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/NW/resultado_python.txt";
         } else if ("SW".equals(scriptName)) {
-            pythonScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/python/SW.py";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_python_SW.txt";
+            pythonScriptPath = "/Bioinfo/src/main/java/codes/python/SW.py";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/SW/resultado_python_SW.txt";
         }     
     }
 

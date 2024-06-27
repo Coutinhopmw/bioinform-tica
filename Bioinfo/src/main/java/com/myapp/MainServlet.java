@@ -107,7 +107,7 @@ public class MainServlet extends HttpServlet {
     
     @Override
      protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-         File result = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/com/myapp/resultado.txt");
+         File result = new File("/Bioinfo/src/main/java/com/myapp/resultado.txt");
             Scanner fileScanner = new Scanner(result);
 
             String NWbestTimeLenguage = fileScanner.nextLine();
@@ -176,7 +176,7 @@ public class MainServlet extends HttpServlet {
 
     // Método para deletar todos os arquivos de uma pasta
     private void deleteFilesInFolder() {
-        File NW = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW");
+        File NW = new File("/Bioinfo/src/main/java/respostas/NW");
         File[] files = NW.listFiles();
         
         if (files != null) {
@@ -186,7 +186,7 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-        File SW = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW");
+        File SW = new File("/Bioinfo/src/main/java/respostas/SW");
         files = SW.listFiles();
         
         if (files != null) {
@@ -196,7 +196,7 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-        File javaClass = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/java");
+        File javaClass = new File("/Bioinfo/src/main/java/codes/java");
         files = javaClass.listFiles();
         
         if (files != null) {
@@ -206,7 +206,7 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-        File cppClass = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/cpp");
+        File cppClass = new File("/Bioinfo/src/main/java/codes/cpp");
         files = cppClass.listFiles();
         
         if (files != null ) {
@@ -216,7 +216,7 @@ public class MainServlet extends HttpServlet {
                 }
             }
         }
-        File cClass = new File("C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/c");
+        File cClass = new File("/Bioinfo/src/main/java/codes/c");
         files = cClass.listFiles();
         
         if (files != null ) {

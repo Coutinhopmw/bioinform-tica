@@ -18,22 +18,22 @@ public class ExecuteCProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.cFileName = cFileName;
-        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "/Bioinfo/database";
 
         if ("NW".equals(cFileName)) {
-            cFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/c/NW.c";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_c.txt";
+            cFilePath = "/Bioinfo/src/main/java/codes/c/NW.c";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/NW/resultado_c.txt";
         
         } else if ("SW".equals(cFileName)) {
-            cFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/c/SW.c";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_c_SW.txt";
+            cFilePath = "/Bioinfo/src/main/java/codes/c/SW.c";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/SW/resultado_c_SW.txt";
         }
     }
 
     @Override
     public void run() {
         try {
-            String outputDir = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/c/";
+            String outputDir = "/Bioinfo/src/main/java/codes/c/";
 
             if ("NW".equals(cFileName)) {
                 System.out.println("C      NW executando o arquivo...");

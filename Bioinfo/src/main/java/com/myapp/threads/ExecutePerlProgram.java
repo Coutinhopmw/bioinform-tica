@@ -21,15 +21,15 @@ public class ExecutePerlProgram implements Runnable {
         this.count = count;
         this.seq = seq;
         this.scriptName = scriptName;
-        this.directoryPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/Bancos de dados";
+        this.directoryPath = "/Bioinfo/database";
 
         // Define o caminho do script Perl com base no nome do script
         if ("NW".equals(scriptName)) {
-            perlScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/perl/NW.pl";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/NW/resultado_perl.txt";
+            perlScriptPath = "/Bioinfo/src/main/java/codes/perl/NW.pl";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/NW/resultado_perl.txt";
         } else if ("SW".equals(scriptName)) {
-            perlScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/codes/perl/SW.pl";
-            outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/respostas/SW/resultado_perl_SW.txt";
+            perlScriptPath = "/Bioinfo/src/main/java/codes/perl/SW.pl";
+            outputFilePath = "/Bioinfo/src/main/java/respostas/SW/resultado_perl_SW.txt";
         }     
     }
 

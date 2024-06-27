@@ -8,11 +8,11 @@ import java.util.Scanner;
 public class ExecuteMainPython implements Runnable {
     private String pythonScriptPath;
     private String outputFilePath;
-    private static final String PYTHON_EXECUTABLE = "python";
+    private static final String PYTHON_EXECUTABLE = "python3";
 
     public ExecuteMainPython() {
-        pythonScriptPath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/com/myapp/main.py"; 
-        outputFilePath = "C:/Users/Jess/OneDrive/Documentos/NetBeansProjects/BIO/Bioinfo/src/main/java/com/myapp/resultado.txt";
+        pythonScriptPath = "/Bioinfo/src/main/java/com/myapp/main.py"; 
+        outputFilePath = "/Bioinfo/src/main/java/com/myapp/resultado.txt";
     }
 
     @Override
