@@ -5,7 +5,7 @@ pageEncoding="UTF-8"%>
 <head>
     <title>Result Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="resultF.css" type="text/css"/>
+    <link rel="stylesheet" href="css/resultF.css" type="text/css"/>
     <script>
         function showSection(sectionId) {
             document.getElementById('NWSection').style.display = 'none';

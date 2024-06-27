@@ -1,10 +1,10 @@
 >MN339451.1 Influenza A virus (A/turkey/Egypt/influ.2/2019(H5)) segment 4 hemagglutinin, HA1 region, (HA) gene, partial cds
-0.02
+0.01
 -227
 544
 34
 >KX840389.1 Cucumber mosaic virus isolate BR coat protein gene, partial cds
-0.02
+0.01
 -215
 567
 34

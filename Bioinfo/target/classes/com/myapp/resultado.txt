@@ -1,5 +1,5 @@
 resultado_c.txt
-0.02
+0.01
 resultado_c.txt
 -227
 resultado_c.txt
@@ -7,7 +7,7 @@ resultado_c.txt
 resultado_c.txt
 34
 resultado_c_sharp_SW.txt
-0.07
+0.05
 resultado_c_SW.txt
 44
 resultado_c_plus_SW.txt
