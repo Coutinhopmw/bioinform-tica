@@ -1,0 +1,2842 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.16.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nt</BlastOutput_db>
+  <BlastOutput_query-ID>Query_3611973</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>36</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>2</Parameters_sc-match>
+      <Parameters_sc-mismatch>-3</Parameters_sc-mismatch>
+      <Parameters_gap-open>5</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_3611973</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>36</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|1777376705|emb|LR738721.1|</Hit_id>
+  <Hit_def>Streptococcus suis isolate S10 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>LR738721</Hit_accession>
+  <Hit_len>2042889</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|1712298631|gb|CP041994.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain INT-01 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP041994</Hit_accession>
+  <Hit_len>2092054</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1003065</Hsp_hit-from>
+      <Hsp_hit-to>1003030</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|1654241871|emb|LR594043.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain NCTC10237 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>LR594043</Hit_accession>
+  <Hit_len>2070644</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30390</Hsp_hit-from>
+      <Hsp_hit-to>30425</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|1624179737|gb|CP039462.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain WUSS351 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP039462</Hit_accession>
+  <Hit_len>2283286</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28737</Hsp_hit-from>
+      <Hsp_hit-to>28772</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|1439050742|gb|CP030124.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SH1510 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP030124</Hit_accession>
+  <Hit_len>2214693</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29189</Hsp_hit-from>
+      <Hsp_hit-to>29224</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|1418414505|gb|CP025419.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SH0104 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP025419</Hit_accession>
+  <Hit_len>2243598</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29377</Hsp_hit-from>
+      <Hsp_hit-to>29412</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|1417790296|gb|CP017667.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 1081 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP017667</Hit_accession>
+  <Hit_len>2228089</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28817</Hsp_hit-from>
+      <Hsp_hit-to>28852</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|1417788394|gb|CP017666.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 0061 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP017666</Hit_accession>
+  <Hit_len>2138420</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28816</Hsp_hit-from>
+      <Hsp_hit-to>28851</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|1403474683|emb|LS483418.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain NCTC10234 genome assembly, chromosome: 1</Hit_def>
+  <Hit_accession>LS483418</Hit_accession>
+  <Hit_len>1984375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|1304114774|gb|CP025095.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain HN136 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP025095</Hit_accession>
+  <Hit_len>2719245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30961</Hsp_hit-from>
+      <Hsp_hit-to>30996</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|1272233146|gb|CP024126.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain HA0609 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP024126</Hit_accession>
+  <Hit_len>2247350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|1269271240|gb|CP024050.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain CS100322 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP024050</Hit_accession>
+  <Hit_len>2137649</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28832</Hsp_hit-from>
+      <Hsp_hit-to>28867</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|2723886894|gb|CP152119.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ss2301 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP152119</Hit_accession>
+  <Hit_len>2095733</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28832</Hsp_hit-from>
+      <Hsp_hit-to>28867</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|1205265806|gb|CP016175.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain LSM102 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP016175</Hit_accession>
+  <Hit_len>2067932</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|1186398733|gb|CP020863.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SC19, complete genome</Hit_def>
+  <Hit_accession>CP020863</Hit_accession>
+  <Hit_len>2095966</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|1127878652|gb|CP018908.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SS2-1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP018908</Hit_accession>
+  <Hit_len>2094030</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>6080</Hsp_hit-from>
+      <Hsp_hit-to>6115</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|2656678420|gb|CP142676.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 65555 chromosome</Hit_def>
+  <Hit_accession>CP142676</Hit_accession>
+  <Hit_len>2151750</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>6068</Hsp_hit-from>
+      <Hsp_hit-to>6103</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|2648041657|gb|CP141904.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 8324 chromosome</Hit_def>
+  <Hit_accession>CP141904</Hit_accession>
+  <Hit_len>2150897</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>5619</Hsp_hit-from>
+      <Hsp_hit-to>5654</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|2636762300|gb|CP140109.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 2022WUSS148 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP140109</Hit_accession>
+  <Hit_len>2464825</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29025</Hsp_hit-from>
+      <Hsp_hit-to>29060</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|2636429624|gb|CP139881.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ss_21 chromosome</Hit_def>
+  <Hit_accession>CP139881</Hit_accession>
+  <Hit_len>2070399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>888772</Hsp_hit-from>
+      <Hsp_hit-to>888807</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|2636425615|gb|CP139879.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ss_45 chromosome</Hit_def>
+  <Hit_accession>CP139879</Hit_accession>
+  <Hit_len>2093869</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1193450</Hsp_hit-from>
+      <Hsp_hit-to>1193415</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|2636423763|gb|CP139880.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ss_22 chromosome</Hit_def>
+  <Hit_accession>CP139880</Hit_accession>
+  <Hit_len>2021516</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1124956</Hsp_hit-from>
+      <Hsp_hit-to>1124921</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|2636419880|gb|CP139875.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ss_134 chromosome</Hit_def>
+  <Hit_accession>CP139875</Hit_accession>
+  <Hit_len>2092738</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>975627</Hsp_hit-from>
+      <Hsp_hit-to>975662</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|2625457337|gb|CP139163.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain cnzyss2-311 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP139163</Hit_accession>
+  <Hit_len>2096025</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1086343</Hsp_hit-from>
+      <Hsp_hit-to>1086308</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|2584903241|gb|CP135093.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 1652329 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP135093</Hit_accession>
+  <Hit_len>2219837</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29091</Hsp_hit-from>
+      <Hsp_hit-to>29126</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|2584901030|gb|CP135090.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID48908 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP135090</Hit_accession>
+  <Hit_len>2387659</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>37269</Hsp_hit-from>
+      <Hsp_hit-to>37304</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|2584899033|gb|CP135094.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 1547095 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP135094</Hit_accession>
+  <Hit_len>2174946</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28979</Hsp_hit-from>
+      <Hsp_hit-to>29014</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|2584894838|gb|CP135087.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID26102 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP135087</Hit_accession>
+  <Hit_len>2443815</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>64012</Hsp_hit-from>
+      <Hsp_hit-to>64047</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|2582825054|gb|CP135065.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID24665 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP135065</Hit_accession>
+  <Hit_len>2055958</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1147759</Hsp_hit-from>
+      <Hsp_hit-to>1147724</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|2579654291|gb|CP100435.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain DE609B chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100435</Hit_accession>
+  <Hit_len>2055648</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|2579580331|gb|CP134487.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain MY1C3_3B chromosome, complete genome</Hit_def>
+  <Hit_accession>CP134487</Hit_accession>
+  <Hit_len>2253276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29091</Hsp_hit-from>
+      <Hsp_hit-to>29126</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|2579578065|gb|CP134473.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain TMW_SS028 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP134473</Hit_accession>
+  <Hit_len>2408625</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29030</Hsp_hit-from>
+      <Hsp_hit-to>29065</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|2579563505|gb|CP134472.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 1522228 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP134472</Hit_accession>
+  <Hit_len>2208458</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28955</Hsp_hit-from>
+      <Hsp_hit-to>28990</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|2579561176|gb|CP134469.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain M104170_C2 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP134469</Hit_accession>
+  <Hit_len>2525636</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29015</Hsp_hit-from>
+      <Hsp_hit-to>29050</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|2579559284|gb|CP134477.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain NLS40 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP134477</Hit_accession>
+  <Hit_len>2053420</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>31816</Hsp_hit-from>
+      <Hsp_hit-to>31851</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|1015396756|gb|CP012731.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 90-1330 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP012731</Hit_accession>
+  <Hit_len>2146151</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1031253</Hsp_hit-from>
+      <Hsp_hit-to>1031218</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|1000814620|gb|CP012911.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain NSUI060, complete genome</Hit_def>
+  <Hit_accession>CP012911</Hit_accession>
+  <Hit_len>2285232</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>97510</Hsp_hit-from>
+      <Hsp_hit-to>97545</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|2473745749|gb|CP102748.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cSFJ45 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102748</Hit_accession>
+  <Hit_len>2091110</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|2473741898|gb|CP102746.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cAKJ47-2 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102746</Hit_accession>
+  <Hit_len>2153448</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|2473634769|gb|CP116393.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SS/UPM/MY/F001 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP116393</Hit_accession>
+  <Hit_len>2470830</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>508468</Hsp_hit-from>
+      <Hsp_hit-to>508433</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|920768663|gb|CP011419.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain NSUI002, complete genome</Hit_def>
+  <Hit_accession>CP011419</Hit_accession>
+  <Hit_len>2255345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29380</Hsp_hit-from>
+      <Hsp_hit-to>29415</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|821177616|gb|CP002007.2|</Hit_id>
+  <Hit_def>Streptococcus suis 05HAS68, complete genome</Hit_def>
+  <Hit_accession>CP002007</Hit_accession>
+  <Hit_len>2176073</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29173</Hsp_hit-from>
+      <Hsp_hit-to>29208</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|2324827839|gb|CP110141.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain WUSS030 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP110141</Hit_accession>
+  <Hit_len>2223280</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29073</Hsp_hit-from>
+      <Hsp_hit-to>29108</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|2323814663|gb|CP109940.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID34572 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP109940</Hit_accession>
+  <Hit_len>2287867</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29090</Hsp_hit-from>
+      <Hsp_hit-to>29125</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|2323812371|gb|CP109942.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID35541 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP109942</Hit_accession>
+  <Hit_len>2097918</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28832</Hsp_hit-from>
+      <Hsp_hit-to>28867</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|2323809116|gb|CP109941.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID38828 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP109941</Hit_accession>
+  <Hit_len>2074728</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|2323805760|gb|CP109937.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain TRG6 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP109937</Hit_accession>
+  <Hit_len>2292430</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29090</Hsp_hit-from>
+      <Hsp_hit-to>29125</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|2323791929|gb|CP109939.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ID36054 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP109939</Hit_accession>
+  <Hit_len>2215082</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29090</Hsp_hit-from>
+      <Hsp_hit-to>29125</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|2317606215|gb|CP095182.1|</Hit_id>
+  <Hit_def>Streptococcus suis 89-1591 chromosome</Hit_def>
+  <Hit_accession>CP095182</Hit_accession>
+  <Hit_len>2269217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29172</Hsp_hit-from>
+      <Hsp_hit-to>29207</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|2282878271|gb|CP102154.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SS15055_N2_C15 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102154</Hit_accession>
+  <Hit_len>2007031</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>gi|2282871974|gb|CP102143.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain DNR43 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102143</Hit_accession>
+  <Hit_len>2225263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>gi|2282869765|gb|CP102136.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain M105052_S26 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102136</Hit_accession>
+  <Hit_len>2411696</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>31234</Hsp_hit-from>
+      <Hsp_hit-to>31269</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>gi|2282867819|gb|CP102138.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain M102942_S11 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102138</Hit_accession>
+  <Hit_len>2121233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30512</Hsp_hit-from>
+      <Hsp_hit-to>30547</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>gi|2282863796|gb|CP102137.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain M104300_S20 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102137</Hit_accession>
+  <Hit_len>2074370</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>gi|2282861783|gb|CP102140.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain DNC49 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102140</Hit_accession>
+  <Hit_len>2137486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>gi|2282852415|gb|CP102094.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 12RC1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP102094</Hit_accession>
+  <Hit_len>2198399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30067</Hsp_hit-from>
+      <Hsp_hit-to>30102</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>gi|2279711011|gb|CP101844.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 2018WUSS151 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP101844</Hit_accession>
+  <Hit_len>2229493</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29173</Hsp_hit-from>
+      <Hsp_hit-to>29208</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>gi|2269769157|gb|CP100431.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 1521251 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100431</Hit_accession>
+  <Hit_len>2310771</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28956</Hsp_hit-from>
+      <Hsp_hit-to>28991</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>gi|2269767165|gb|CP100430.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain LSS42 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100430</Hit_accession>
+  <Hit_len>2169516</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29159</Hsp_hit-from>
+      <Hsp_hit-to>29194</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>gi|2269673217|gb|CP100418.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC104 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100418</Hit_accession>
+  <Hit_len>2249780</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>gi|2269671112|gb|CP100326.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC90 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100326</Hit_accession>
+  <Hit_len>2249566</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>gi|2269669012|gb|CP100328.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC86 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100328</Hit_accession>
+  <Hit_len>2247021</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>63</Hit_num>
+  <Hit_id>gi|2269666911|gb|CP100330.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC85 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100330</Hit_accession>
+  <Hit_len>2247294</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>64</Hit_num>
+  <Hit_id>gi|2269664808|gb|CP100332.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC84 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100332</Hit_accession>
+  <Hit_len>2249557</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>65</Hit_num>
+  <Hit_id>gi|2269662700|gb|CP100334.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC83 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100334</Hit_accession>
+  <Hit_len>2249800</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>66</Hit_num>
+  <Hit_id>gi|2269660599|gb|CP100336.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC81 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100336</Hit_accession>
+  <Hit_len>2247459</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>67</Hit_num>
+  <Hit_id>gi|2269658492|gb|CP100338.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC80 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100338</Hit_accession>
+  <Hit_len>2249634</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>68</Hit_num>
+  <Hit_id>gi|2269656389|gb|CP100340.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain STC78 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP100340</Hit_accession>
+  <Hit_len>2249758</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30290</Hsp_hit-from>
+      <Hsp_hit-to>30325</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>69</Hit_num>
+  <Hit_id>gi|2225253718|gb|CP095463.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain TJS56 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP095463</Hit_accession>
+  <Hit_len>2056478</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>2045678</Hsp_hit-from>
+      <Hsp_hit-to>2045643</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>70</Hit_num>
+  <Hit_id>gi|2222641933|gb|CP095162.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain TJS75 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP095162</Hit_accession>
+  <Hit_len>2368195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>2117366</Hsp_hit-from>
+      <Hsp_hit-to>2117331</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>71</Hit_num>
+  <Hit_id>gi|2186018608|gb|CP091422.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain LSM157 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP091422</Hit_accession>
+  <Hit_len>2069014</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28933</Hsp_hit-from>
+      <Hsp_hit-to>28968</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>72</Hit_num>
+  <Hit_id>gi|2186016641|gb|CP091423.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain LSM29 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP091423</Hit_accession>
+  <Hit_len>2157789</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>27393</Hsp_hit-from>
+      <Hsp_hit-to>27428</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>73</Hit_num>
+  <Hit_id>gi|2120027898|gb|CP085088.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ssuis_MA1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP085088</Hit_accession>
+  <Hit_len>1965446</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>74</Hit_num>
+  <Hit_id>gi|2120027895|gb|CP084908.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ssuis_MA4 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP084908</Hit_accession>
+  <Hit_len>2671627</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>33577</Hsp_hit-from>
+      <Hsp_hit-to>33612</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>75</Hit_num>
+  <Hit_id>gi|2120027893|gb|CP085085.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Ssuis_MA8 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP085085</Hit_accession>
+  <Hit_len>2163068</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>76</Hit_num>
+  <Hit_id>gi|2112757563|gb|CP071806.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain GX69 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP071806</Hit_accession>
+  <Hit_len>2388171</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29076</Hsp_hit-from>
+      <Hsp_hit-to>29111</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>77</Hit_num>
+  <Hit_id>gi|2094528066|gb|CP082948.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SZ1908 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082948</Hit_accession>
+  <Hit_len>2137458</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28815</Hsp_hit-from>
+      <Hsp_hit-to>28850</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>78</Hit_num>
+  <Hit_id>gi|2088793610|gb|CP082201.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cAKJ18 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082201</Hit_accession>
+  <Hit_len>2063473</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>79</Hit_num>
+  <Hit_id>gi|2088784279|gb|CP082200.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cDY107 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082200</Hit_accession>
+  <Hit_len>2062921</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>80</Hit_num>
+  <Hit_id>gi|2088781848|gb|CP082204.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain FJSM5 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082204</Hit_accession>
+  <Hit_len>2626999</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29013</Hsp_hit-from>
+      <Hsp_hit-to>29048</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>81</Hit_num>
+  <Hit_id>gi|2088779964|gb|CP082197.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cSS389 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082197</Hit_accession>
+  <Hit_len>2060676</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>82</Hit_num>
+  <Hit_id>gi|2088778077|gb|CP082199.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cFJSM5 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082199</Hit_accession>
+  <Hit_len>2061041</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>83</Hit_num>
+  <Hit_id>gi|2088776177|gb|CP082198.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain Transconjugant cNJ3 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP082198</Hit_accession>
+  <Hit_len>2065481</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>84</Hit_num>
+  <Hit_id>gi|2069312727|gb|CP078541.1|</Hit_id>
+  <Hit_def>Streptococcus suis YB51 strain Colony133 chromosome</Hit_def>
+  <Hit_accession>CP078541</Hit_accession>
+  <Hit_len>2043655</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30874</Hsp_hit-from>
+      <Hsp_hit-to>30909</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>85</Hit_num>
+  <Hit_id>gi|2069312718|gb|CP078543.1|</Hit_id>
+  <Hit_def>Streptococcus suis YB51 strain Colony29 chromosome</Hit_def>
+  <Hit_accession>CP078543</Hit_accession>
+  <Hit_len>2043655</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30874</Hsp_hit-from>
+      <Hsp_hit-to>30909</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>86</Hit_num>
+  <Hit_id>gi|2069312711|gb|CP078542.1|</Hit_id>
+  <Hit_def>Streptococcus suis YB51 strain Colony132 chromosome</Hit_def>
+  <Hit_accession>CP078542</Hit_accession>
+  <Hit_len>2043655</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30874</Hsp_hit-from>
+      <Hsp_hit-to>30909</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>87</Hit_num>
+  <Hit_id>gi|2007100869|gb|CP071697.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 1112S chromosome, complete genome</Hit_def>
+  <Hit_accession>CP071697</Hit_accession>
+  <Hit_len>2440827</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29307</Hsp_hit-from>
+      <Hsp_hit-to>29342</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>88</Hit_num>
+  <Hit_id>gi|1998784776|gb|CP071305.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain SC183 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP071305</Hit_accession>
+  <Hit_len>2328375</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29077</Hsp_hit-from>
+      <Hsp_hit-to>29112</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>89</Hit_num>
+  <Hit_id>gi|1941739501|gb|CP065430.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain YZDH1 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP065430</Hit_accession>
+  <Hit_len>2495947</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29025</Hsp_hit-from>
+      <Hsp_hit-to>29060</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>90</Hit_num>
+  <Hit_id>gi|1941737536|gb|CP065431.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain YP20190405 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP065431</Hit_accession>
+  <Hit_len>2144810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>91</Hit_num>
+  <Hit_id>gi|1915425893|gb|CP047248.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain LSM178 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP047248</Hit_accession>
+  <Hit_len>2115437</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28933</Hsp_hit-from>
+      <Hsp_hit-to>28968</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>92</Hit_num>
+  <Hit_id>gi|1913374082|gb|CP058742.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 10 chromosome</Hit_def>
+  <Hit_accession>CP058742</Hit_accession>
+  <Hit_len>2042887</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>93</Hit_num>
+  <Hit_id>gi|1913371982|gb|CP058741.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 13-00283-02 chromosome</Hit_def>
+  <Hit_accession>CP058741</Hit_accession>
+  <Hit_len>2182685</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29144</Hsp_hit-from>
+      <Hsp_hit-to>29179</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>94</Hit_num>
+  <Hit_id>gi|1913369912|gb|CP058740.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain 16085/3b chromosome</Hit_def>
+  <Hit_accession>CP058740</Hit_accession>
+  <Hit_len>2172677</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>30509</Hsp_hit-from>
+      <Hsp_hit-to>30544</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>95</Hit_num>
+  <Hit_id>gi|1878089528|gb|CP031379.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ISU2660 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP031379</Hit_accession>
+  <Hit_len>2182487</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>96</Hit_num>
+  <Hit_id>gi|1878087440|gb|CP030023.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ISU2414 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP030023</Hit_accession>
+  <Hit_len>2222543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>97</Hit_num>
+  <Hit_id>gi|1878085496|gb|CP030022.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ISU2714 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP030022</Hit_accession>
+  <Hit_len>2063877</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28834</Hsp_hit-from>
+      <Hsp_hit-to>28869</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>98</Hit_num>
+  <Hit_id>gi|1878083373|gb|CP030020.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ISU2514 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP030020</Hit_accession>
+  <Hit_len>2248415</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>97056</Hsp_hit-from>
+      <Hsp_hit-to>97091</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>99</Hit_num>
+  <Hit_id>gi|1878081300|gb|CP031377.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ISU2614 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP031377</Hit_accession>
+  <Hit_len>2163384</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>29175</Hsp_hit-from>
+      <Hsp_hit-to>29210</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>100</Hit_num>
+  <Hit_id>gi|1878079340|gb|CP030017.1|</Hit_id>
+  <Hit_def>Streptococcus suis strain ISU1606 chromosome, complete genome</Hit_def>
+  <Hit_accession>CP030017</Hit_accession>
+  <Hit_len>2073988</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>66.2076</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>6.30315e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>28833</Hsp_hit-from>
+      <Hsp_hit-to>28868</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_qseq>
+      <Hsp_hseq>AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>106641823</Statistics_db-num>
+      <Statistics_db-len>1793731172668</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.41</Statistics_kappa>
+      <Statistics_lambda>0.625</Statistics_lambda>
+      <Statistics_entropy>0.78</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

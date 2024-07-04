@@ -51,7 +51,7 @@ sub smith_waterman {
     printf "%.2f\n", $tempo_execucao;
     print "$max_score\n";
     print "$gaps\n";
-    print "44\n";
+    print "48\n";
 }
 sub max {
     my $max = shift;

@@ -28,6 +28,7 @@ public class ExecuteMainPython implements Runnable {
             Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
             String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
             fileWriter.write(runOutput);
+            runOutputStream.close();
             fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();

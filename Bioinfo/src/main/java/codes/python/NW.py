@@ -42,7 +42,7 @@ def needleman_wunsch_reconstruct(seq1, seq2, match_score, mismatch_penalty, gap_
     print(round((fim - inicio), 2))
     print(alignment_score)
     print(gaps)
-    print("34")
+    print("39")
 seq1 = sys.argv[1]
 seq2 = sys.argv[2]
 needleman_wunsch_reconstruct(seq1, seq2, 1, -1, -1)

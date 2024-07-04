@@ -3,22 +3,21 @@ package com.myapp.threads;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ExecuteCppProgram implements Runnable {
 
     private String cppFilePath;
     private String outputFilePath;
-    private int count;
-    private String seq;
+    private String seq1;
+    private String seq2;
     private String cppFileName;
-    private String directoryPath;
 
-    public ExecuteCppProgram(int count, String seq, String cppFileName) {
-        this.count = count;
-        this.seq = seq;
+    public ExecuteCppProgram(ArrayList<String> seqList, String cppFileName) {
+        this.seq1 = seqList.get(0);
+        this.seq2 = seqList.get(1);
         this.cppFileName = cppFileName;
-        this.directoryPath = "/Bioinfo/database";
 
         // Define o caminho do arquivo C++ com base no nome do arquivo
         if ("NW".equals(cppFileName)) {
@@ -39,7 +38,7 @@ public class ExecuteCppProgram implements Runnable {
             // Diretório de saída para o arquivo executável
             // Se não estiver usando docker lembre de atulizar seu caminho:
             String outputDir = "/Bioinfo/src/main/java/codes/cpp";
-            String exeFilePath = outputDir + "/" + cppFileName + "_executable" + count + ".exe";
+            String exeFilePath = outputDir + "/" + cppFileName + "_executable.exe";
 
             // Compila o arquivo C++
             if ("NW".equals(cppFileName)) {
@@ -53,7 +52,6 @@ public class ExecuteCppProgram implements Runnable {
             
             // Captura a saída de erro da compilação
             Scanner compileErrorStream = new Scanner(compileProcess.getErrorStream()).useDelimiter("\\A");
-
             int compileExitCode = compileProcess.waitFor();
             if (compileExitCode != 0) {
                 if ("NW".equals(cppFileName)) {
@@ -61,7 +59,8 @@ public class ExecuteCppProgram implements Runnable {
                } else if ("SW".equals(cppFileName)) {
                   System.out.println("Cpp    SW Erro na compilacao. Codigo de retorno: " + compileExitCode);
                }
-                return;
+               compileErrorStream.close();
+               return;
             }
             if ("NW".equals(cppFileName)) {
                 System.out.println("Cpp    NW compilacao bem-sucedida.");
@@ -73,58 +72,26 @@ public class ExecuteCppProgram implements Runnable {
             File outputFile = new File(outputFilePath);
             FileWriter fileWriter = new FileWriter(outputFile, true);
 
-            
-            // System.out.println("File aberto");
-            File dir = new File(directoryPath);
-            if (!dir.exists()) {
-                System.out.println("Diretório não existe: " + directoryPath);
+            ProcessBuilder runProcessBuilder = new ProcessBuilder(exeFilePath, seq1, seq2);
+            runProcessBuilder.redirectErrorStream(true);
+
+            Process runProcess = runProcessBuilder.start();
+            int runExitCode = runProcess.waitFor();
+
+            Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
+            String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
+            fileWriter.write(runOutput);
+
+            if (runExitCode != 0) {
+                // System.out.println("Erro na execuçao. Codigo de retorno: " + runExitCode);
+            } else {
+                // System.out.println("Programa C++ executado com sucesso.");
             }
-            // System.out.println("dir aberto");
-            File[] files = dir.listFiles();
-            if (files != null) {
-                for (File file : files) {
-                    try (Scanner fileScanner = new Scanner(file)) {
-                        String firstLine = fileScanner.nextLine();
-                        //System.err.println(firstLine);
-                        String secondLine = fileScanner.hasNextLine() ? fileScanner.nextLine() : "";
-                        //System.err.println(secondLine);
-
-                        fileWriter.write(firstLine+"\n");
-
-                        ProcessBuilder runProcessBuilder = new ProcessBuilder(exeFilePath, seq, secondLine);
-                        runProcessBuilder.redirectErrorStream(true);
-
-                        Process runProcess = runProcessBuilder.start();
-                        int runExitCode = runProcess.waitFor();
-
-                        Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
-                        String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
-                        fileWriter.write(runOutput);
-
-                        if (runExitCode != 0) {
-                            // System.out.println("Erro na execuçao. Codigo de retorno: " + runExitCode);
-                        } else {
-                            // System.out.println("Programa C++ executado com sucesso.");
-                        }
-                    } catch (IOException | InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-
+            compileErrorStream.close();
+            runOutputStream.close();
             fileWriter.close();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        // Exemplo de uso para NW.cpp
-        Thread threadNW = new Thread(new ExecuteCppProgram(1, "sequenciaNW", "NW"));
-        threadNW.start();
-
-        // Exemplo de uso para SW.cpp
-        Thread threadSW = new Thread(new ExecuteCppProgram(2, "sequenciaSW", "SW"));
-        threadSW.start();
     }
 }

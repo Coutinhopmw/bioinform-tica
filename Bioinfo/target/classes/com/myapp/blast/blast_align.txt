@@ -1,0 +1,1100 @@
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis isolate S10 genome assembly, chromosome: 1
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2042889
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain INT-01 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2092054
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain NCTC10237 genome assembly, chromosome: 1
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2070644
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain WUSS351 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2283286
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SH1510 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2214693
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SH0104 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2243598
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 1081 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2228089
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 0061 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2138420
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain NCTC10234 genome assembly, chromosome: 1
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 1984375
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain HN136 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2719245
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain HA0609 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2247350
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain CS100322 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2137649
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ss2301 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2095733
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain LSM102 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2067932
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SC19, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2095966
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SS2-1 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2094030
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 65555 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2151750
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 8324 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2150897
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 2022WUSS148 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2464825
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ss_21 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2070399
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ss_45 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2093869
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ss_22 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2021516
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ss_134 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2092738
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain cnzyss2-311 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2096025
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 1652329 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2219837
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID48908 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2387659
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 1547095 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2174946
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID26102 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2443815
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID24665 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2055958
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain DE609B chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2055648
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain MY1C3_3B chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2253276
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain TMW_SS028 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2408625
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 1522228 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2208458
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain M104170_C2 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2525636
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain NLS40 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2053420
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 90-1330 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2146151
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain NSUI060, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2285232
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cSFJ45 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2091110
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cAKJ47-2 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2153448
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SS/UPM/MY/F001 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2470830
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain NSUI002, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2255345
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis 05HAS68, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2176073
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain WUSS030 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2223280
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID34572 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2287867
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID35541 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2097918
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID38828 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2074728
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain TRG6 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2292430
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ID36054 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2215082
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis 89-1591 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2269217
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SS15055_N2_C15 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2007031
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain DNR43 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2225263
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain M105052_S26 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2411696
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain M102942_S11 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2121233
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain M104300_S20 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2074370
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain DNC49 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2137486
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 12RC1 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2198399
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 2018WUSS151 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2229493
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 1521251 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2310771
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain LSS42 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2169516
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC104 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2249780
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC90 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2249566
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC86 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2247021
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC85 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2247294
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC84 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2249557
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC83 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2249800
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC81 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2247459
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC80 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2249634
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain STC78 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2249758
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain TJS56 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2056478
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain TJS75 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2368195
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain LSM157 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2069014
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain LSM29 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2157789
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ssuis_MA1 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 1965446
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ssuis_MA4 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2671627
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Ssuis_MA8 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2163068
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain GX69 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2388171
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SZ1908 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2137458
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cAKJ18 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2063473
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cDY107 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2062921
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain FJSM5 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2626999
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cSS389 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2060676
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cFJSM5 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2061041
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain Transconjugant cNJ3 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2065481
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis YB51 strain Colony133 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2043655
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis YB51 strain Colony29 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2043655
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis YB51 strain Colony132 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2043655
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 1112S chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2440827
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain SC183 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2328375
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain YZDH1 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2495947
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain YP20190405 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2144810
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain LSM178 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2115437
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 10 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2042887
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 13-00283-02 chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2182685
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain 16085/3b chromosome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2172677
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ISU2660 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2182487
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ISU2414 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2222543
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ISU2714 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2063877
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ISU2514 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2248415
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ISU2614 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2163384
+Tamanho do alinhamento: 36 
+
+Alinhamento:
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+||||||||||||||||||||||||||||||||||||
+AGCTTAGCTATGCTACCTATATCTTGGCCTTGGCCG
+Nome da sequencia: Streptococcus suis strain ISU1606 chromosome, complete genome
+Score: 72
+Identity: 36
+E-value: 6.30315e-08
+Tamanho da sequencia: 2073988
+Tamanho do alinhamento: 36 
+

@@ -52,7 +52,7 @@ public class NW {
         System.out.println(df.format((endTime - startTime) / 1000.0));
         System.out.println(scoreMatrix[seq1.length()][seq2.length()]);
         System.out.println(gaps);
-        System.out.println("42");
+        System.out.println("48");
     }
     public static void main(String[] args) {
         String seq1 = args[0];

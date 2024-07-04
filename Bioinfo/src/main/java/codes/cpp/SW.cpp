@@ -65,6 +65,6 @@ int main(int argc, char* argv[]) {
     cout << fixed << setprecision(2) << result.execution_time  << endl;
     cout << result.score << endl;
     cout << result.gap_count << endl;
-    cout << "47" << endl;
+    cout << "56" << endl;
     return 0;
 }

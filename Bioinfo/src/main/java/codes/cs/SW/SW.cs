@@ -1,9 +1,12 @@
+using System;
 using System.Diagnostics;
+
 public class SWResult{
     public int max_score { get; set; }
     public int gap_count { get; set; }
     public double execution_time { get; set; }
 }
+
 public class SW{
     public static SWResult SmithWaterman(string seq1, string seq2, int match = 1, int mismatch = -1, int gap = -1){
         var stopwatch = Stopwatch.StartNew();
@@ -12,7 +15,7 @@ public class SW{
         var score_matrix = new int[m + 1, n + 1];
         var traceback_matrix = new int[m + 1, n + 1];
         int max_score = 0;
-        (int, int) max_pos = (0, 0);
+        Tuple<int, int> max_pos = new Tuple<int, int>(0, 0); // Correção aqui
         for (int i = 1; i <= m; ++i){
             for (int j = 1; j <= n; ++j){
                 int match_score = score_matrix[i - 1, j - 1] + (seq1[i - 1] == seq2[j - 1] ? match : mismatch);
@@ -31,7 +34,7 @@ public class SW{
                 }
                 if (score_matrix[i, j] > max_score){
                     max_score = score_matrix[i, j];
-                    max_pos = (i, j);
+                    max_pos = new Tuple<int, int>(i, j); // Atualização da posição máxima
                 }
             }
         }
@@ -60,6 +63,7 @@ public class SW{
             max_score = max_score
         };
     }
+
     public static void Main(string[] args){
         string seq1 = args[0];
         string seq2 = args[1];
@@ -68,6 +72,6 @@ public class SW{
         Console.WriteLine(result.execution_time.ToString("F2", System.Globalization.CultureInfo.InvariantCulture));
         Console.WriteLine(result.max_score);
         Console.WriteLine(result.gap_count);
-        Console.WriteLine("56");
+        Console.WriteLine("62");
     }
 }

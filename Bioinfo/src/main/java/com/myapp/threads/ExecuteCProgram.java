@@ -3,22 +3,22 @@ package com.myapp.threads;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ExecuteCProgram implements Runnable {
 
     private String cFilePath;
     private String outputFilePath;
-    private int count;
-    private String seq;
+    private String seq1;
+    private String seq2;
     private String cFileName;
-    private String directoryPath;
 
-    public ExecuteCProgram(int count, String seq, String cFileName) {
-        this.count = count;
-        this.seq = seq;
+    public ExecuteCProgram(ArrayList<String> seqList, String cFileName) {
+        this.seq1 = seqList.get(0);
+        this.seq2 = seqList.get(1);
         this.cFileName = cFileName;
-        this.directoryPath = "/Bioinfo/database";
+
 
         if ("NW".equals(cFileName)) {
             cFilePath = "/Bioinfo/src/main/java/codes/c/NW.c";
@@ -58,45 +58,22 @@ public class ExecuteCProgram implements Runnable {
             File outputFile = new File(outputFilePath);
             FileWriter fileWriter = new FileWriter(outputFile, true);
 
-            // Lê os arquivos de entrada do diretório especificado
-            File dir = new File(directoryPath);
-            if (!dir.exists()) {
-                System.out.println("Diretório não existe: " + directoryPath);
-                return;
-            }
+            ProcessBuilder runProcessBuilder = new ProcessBuilder(outputDir + cFileName, seq1, seq2);
+            runProcessBuilder.redirectErrorStream(true);
+            Process runProcess = runProcessBuilder.start();
+            int runExitCode = runProcess.waitFor();
 
-            File[] files = dir.listFiles();
-            if (files != null) {
-                for (File file : files) {
-                    if (file.isFile() && file.getName().endsWith(".fasta")) {
-                        try (Scanner fileScanner = new Scanner(file)) {
-                            String firstLine = fileScanner.nextLine();
-                            String secondLine = fileScanner.hasNextLine() ? fileScanner.nextLine() : "";
+            // Lê a saída do programa C
+            Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
+            String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
+            fileWriter.write(runOutput);
 
-                            fileWriter.write(firstLine + "\n");
-
-                            // Executa o programa C compilado
-                            ProcessBuilder runProcessBuilder = new ProcessBuilder(outputDir + cFileName, seq, secondLine);
-                            runProcessBuilder.redirectErrorStream(true);
-                            Process runProcess = runProcessBuilder.start();
-                            int runExitCode = runProcess.waitFor();
-
-                            // Lê a saída do programa C
-                            Scanner runOutputStream = new Scanner(runProcess.getInputStream()).useDelimiter("\\A");
-                            String runOutput = runOutputStream.hasNext() ? runOutputStream.next() : "";
-                            fileWriter.write(runOutput);
-
-                            if (runExitCode != 0) {
-                                // System.out.println("Erro na execução. Código de retorno: " + runExitCode);
-                            } else {
-                                // System.out.println("Programa C executado com sucesso.");
-                            }
-                        } catch (IOException | InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
+            if (runExitCode != 0) {
+                // System.out.println("Erro na execução. Código de retorno: " + runExitCode);
+            } else {
+                // System.out.println("Programa C executado com sucesso.");
+            } 
+            runOutputStream.close();        
             fileWriter.close();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

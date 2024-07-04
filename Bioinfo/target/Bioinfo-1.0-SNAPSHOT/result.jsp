@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.lang.String" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +14,7 @@ pageEncoding="UTF-8"%>
         function showSection(sectionId) {
             document.getElementById('NWSection').style.display = 'none';
             document.getElementById('SWSection').style.display = 'none';
+            document.getElementById('LinesSection').style.display = 'none';
             document.getElementById(sectionId).style.display = 'block';
         }
     </script>
@@ -65,6 +70,8 @@ pageEncoding="UTF-8"%>
         String SWbestLineLenguage = (String) request.getAttribute("SWbestLineLenguage");
         SWbestLineLenguage = veryfy(SWbestLineLenguage);
         String SWbestLine = (String) request.getAttribute("SWbestLine");
+
+        List<String> linesList = (List<String>) request.getAttribute("linesList");
     %>
 </head>
 <body>
@@ -73,6 +80,7 @@ pageEncoding="UTF-8"%>
         <div class="button-container">
             <button onclick="showSection('NWSection')">Comparações NW</button>
             <button onclick="showSection('SWSection')">Comparações SW</button>
+            <button onclick="showSection('LinesSection')">Linhas do Arquivo</button>
         </div>
         
         <div id="NWSection" class="result-section">
@@ -128,6 +136,15 @@ pageEncoding="UTF-8"%>
                         <td><%= SWbestLine != null ? SWbestLine : "N/A" %> linhas</td>
                     </tr>
                 </table>
+            </div>
+        </div>
+
+        <div id="LinesSection" class="result-section" style="display: none;">
+            <h3>Linhas do Arquivo:</h3>
+            <div class="style-p">
+                <% for (String line : linesList) { %>
+                    <p><%= line %></p>
+                <% } %>
             </div>
         </div>
     </div>

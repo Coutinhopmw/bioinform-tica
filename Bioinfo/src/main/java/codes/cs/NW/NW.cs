@@ -1,4 +1,6 @@
+using System;
 using System.Diagnostics;
+
 public class NWResult{
     public int score { get; set; }
     public int gap_count { get; set; }
@@ -68,6 +70,6 @@ public class NW{
         Console.WriteLine(result.execution_time.ToString("F2", System.Globalization.CultureInfo.InvariantCulture));
         Console.WriteLine(result.score);
         Console.WriteLine(result.gap_count);
-        Console.WriteLine("57");
+        Console.WriteLine("62");
     }
 }
